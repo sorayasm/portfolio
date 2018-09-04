@@ -1,0 +1,239 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'jparticles' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 verbose config Skipping project config: /home/sorayasm/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData jparticles
+9 silly fetchNamedPackageData jparticles
+10 silly mapToRegistry name jparticles
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/jparticles
+14 verbose request uri https://registry.npmjs.org/jparticles
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 16:35:37
+17 verbose request using bearer token for auth
+18 verbose request id bdedc3c4c63498cc
+19 http request GET https://registry.npmjs.org/jparticles
+20 http 200 https://registry.npmjs.org/jparticles
+21 verbose headers { date: 'Tue, 04 Sep 2018 19:35:38 GMT',
+21 verbose headers   'content-type': 'application/json; charset=UTF-8',
+21 verbose headers   'transfer-encoding': 'chunked',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'set-cookie':
+21 verbose headers    [ '__cfduid=d545c6dd378cfe8d22e291d06c32545c41536089738; expires=Wed, 04-Sep-19 19:35:38 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+21 verbose headers   'cf-cache-status': 'MISS',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   'cf-ray': '4552e67fb99c809a-SCL',
+21 verbose headers   etag: 'W/"25fe51f17160fb25eba8f2c4295e6bf4"',
+21 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+21 verbose headers   'last-modified': 'Sun, 27 May 2018 05:25:56 GMT',
+21 verbose headers   vary: 'accept-encoding, accept',
+21 verbose headers   server: 'cloudflare',
+21 verbose headers   'content-encoding': 'gzip' }
+22 silly get cb [ 200,
+22 silly get   { date: 'Tue, 04 Sep 2018 19:35:38 GMT',
+22 silly get     'content-type': 'application/json; charset=UTF-8',
+22 silly get     'transfer-encoding': 'chunked',
+22 silly get     connection: 'keep-alive',
+22 silly get     'set-cookie':
+22 silly get      [ '__cfduid=d545c6dd378cfe8d22e291d06c32545c41536089738; expires=Wed, 04-Sep-19 19:35:38 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+22 silly get     'cf-cache-status': 'MISS',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     'cf-ray': '4552e67fb99c809a-SCL',
+22 silly get     etag: 'W/"25fe51f17160fb25eba8f2c4295e6bf4"',
+22 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 silly get     'last-modified': 'Sun, 27 May 2018 05:25:56 GMT',
+22 silly get     vary: 'accept-encoding, accept',
+22 silly get     server: 'cloudflare',
+22 silly get     'content-encoding': 'gzip' } ]
+23 verbose get saving jparticles to /home/sorayasm/.npm/registry.npmjs.org/jparticles/.cache.json
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule jparticles@2.0.1 checking installable status
+37 silly cache add args [ 'jparticles', null ]
+38 verbose cache add spec jparticles
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'jparticles',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'jparticles',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed jparticles@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for jparticles
+42 info addNameTag [ 'jparticles', 'latest' ]
+43 silly mapToRegistry name jparticles
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/jparticles
+47 verbose addNameTag registry:https://registry.npmjs.org/jparticles not in flight; fetching
+48 verbose get https://registry.npmjs.org/jparticles not expired, no request
+49 silly addNameTag next cb for jparticles with tag latest
+50 silly addNamed jparticles@2.0.1
+51 verbose addNamed "2.0.1" is a plain semver version for jparticles
+52 silly mapToRegistry name jparticles
+53 silly mapToRegistry using default registry
+54 silly mapToRegistry registry https://registry.npmjs.org/
+55 silly mapToRegistry uri https://registry.npmjs.org/jparticles
+56 verbose addRemoteTarball https://registry.npmjs.org/jparticles/-/jparticles-2.0.1.tgz not in flight; adding
+57 verbose addRemoteTarball [ 'https://registry.npmjs.org/jparticles/-/jparticles-2.0.1.tgz',
+57 verbose addRemoteTarball   'e5a3cf0edb1b1c204662cead7bc5043ee186b567' ]
+58 info retry fetch attempt 1 at 16:35:39
+59 info attempt registry request try #1 at 16:35:39
+60 http fetch GET https://registry.npmjs.org/jparticles/-/jparticles-2.0.1.tgz
+61 verbose request using bearer token for auth
+62 http fetch 200 https://registry.npmjs.org/jparticles/-/jparticles-2.0.1.tgz
+63 silly fetchAndShaCheck shasum e5a3cf0edb1b1c204662cead7bc5043ee186b567
+64 verbose addTmpTarball /tmp/npm-4412-fe353202/registry.npmjs.org/jparticles/-/jparticles-2.0.1.tgz not in flight; adding
+65 verbose addTmpTarball already have metadata; skipping unpack for jparticles@2.0.1
+66 silly cache afterAdd jparticles@2.0.1
+67 verbose afterAdd /home/sorayasm/.npm/jparticles/2.0.1/package/package.json not in flight; writing
+68 verbose afterAdd /home/sorayasm/.npm/jparticles/2.0.1/package/package.json written
+69 silly loadAllDepsIntoIdealTree Finishing
+70 silly idealTree:prePrune sorayasm
+70 silly idealTree:prePrune ├── assertion-error@1.1.0
+70 silly idealTree:prePrune ├── balanced-match@1.0.0
+70 silly idealTree:prePrune ├── brace-expansion@1.1.11
+70 silly idealTree:prePrune ├── browser-stdout@1.3.1
+70 silly idealTree:prePrune ├── chai@4.1.2
+70 silly idealTree:prePrune ├── check-error@1.0.2
+70 silly idealTree:prePrune ├── commander@2.15.1
+70 silly idealTree:prePrune ├── concat-map@0.0.1
+70 silly idealTree:prePrune ├── debug@3.1.0
+70 silly idealTree:prePrune ├── deep-eql@3.0.1
+70 silly idealTree:prePrune ├── diff@3.5.0
+70 silly idealTree:prePrune ├── escape-string-regexp@1.0.5
+70 silly idealTree:prePrune ├── fs.realpath@1.0.0
+70 silly idealTree:prePrune ├── get-func-name@2.0.0
+70 silly idealTree:prePrune ├── glob@7.1.2
+70 silly idealTree:prePrune ├── growl@1.10.5
+70 silly idealTree:prePrune ├── has-flag@3.0.0
+70 silly idealTree:prePrune ├── he@1.1.1
+70 silly idealTree:prePrune ├── inflight@1.0.6
+70 silly idealTree:prePrune ├── inherits@2.0.3
+70 silly idealTree:prePrune ├── jparticles@2.0.1
+70 silly idealTree:prePrune ├── minimatch@3.0.4
+70 silly idealTree:prePrune ├── minimist@0.0.8
+70 silly idealTree:prePrune ├── mkdirp@0.5.1
+70 silly idealTree:prePrune ├── mocha@5.2.0
+70 silly idealTree:prePrune ├── ms@2.0.0
+70 silly idealTree:prePrune ├── nodemailer@4.6.7
+70 silly idealTree:prePrune ├── once@1.4.0
+70 silly idealTree:prePrune ├── path-is-absolute@1.0.1
+70 silly idealTree:prePrune ├── pathval@1.1.0
+70 silly idealTree:prePrune ├── supports-color@5.4.0
+70 silly idealTree:prePrune ├── type-detect@4.0.8
+70 silly idealTree:prePrune └── wrappy@1.0.2
+71 silly loadIdealTree Finishing
+72 silly currentTree sorayasm
+72 silly currentTree ├── assertion-error@1.1.0
+72 silly currentTree ├── balanced-match@1.0.0
+72 silly currentTree ├── brace-expansion@1.1.11
+72 silly currentTree ├── browser-stdout@1.3.1
+72 silly currentTree ├── chai@4.1.2
+72 silly currentTree ├── check-error@1.0.2
+72 silly currentTree ├── commander@2.15.1
+72 silly currentTree ├── concat-map@0.0.1
+72 silly currentTree ├── debug@3.1.0
+72 silly currentTree ├── deep-eql@3.0.1
+72 silly currentTree ├── diff@3.5.0
+72 silly currentTree ├── escape-string-regexp@1.0.5
+72 silly currentTree ├── fs.realpath@1.0.0
+72 silly currentTree ├── get-func-name@2.0.0
+72 silly currentTree ├── glob@7.1.2
+72 silly currentTree ├── growl@1.10.5
+72 silly currentTree ├── has-flag@3.0.0
+72 silly currentTree ├── he@1.1.1
+72 silly currentTree ├── inflight@1.0.6
+72 silly currentTree ├── inherits@2.0.3
+72 silly currentTree ├── minimatch@3.0.4
+72 silly currentTree ├── minimist@0.0.8
+72 silly currentTree ├── mkdirp@0.5.1
+72 silly currentTree ├── mocha@5.2.0
+72 silly currentTree ├── ms@2.0.0
+72 silly currentTree ├── nodemailer@4.6.7
+72 silly currentTree ├── once@1.4.0
+72 silly currentTree ├── path-is-absolute@1.0.1
+72 silly currentTree ├── pathval@1.1.0
+72 silly currentTree ├── supports-color@5.4.0
+72 silly currentTree ├── type-detect@4.0.8
+72 silly currentTree └── wrappy@1.0.2
+73 silly idealTree sorayasm
+73 silly idealTree ├── assertion-error@1.1.0
+73 silly idealTree ├── balanced-match@1.0.0
+73 silly idealTree ├── brace-expansion@1.1.11
+73 silly idealTree ├── browser-stdout@1.3.1
+73 silly idealTree ├── chai@4.1.2
+73 silly idealTree ├── check-error@1.0.2
+73 silly idealTree ├── commander@2.15.1
+73 silly idealTree ├── concat-map@0.0.1
+73 silly idealTree ├── debug@3.1.0
+73 silly idealTree ├── deep-eql@3.0.1
+73 silly idealTree ├── diff@3.5.0
+73 silly idealTree ├── escape-string-regexp@1.0.5
+73 silly idealTree ├── fs.realpath@1.0.0
+73 silly idealTree ├── get-func-name@2.0.0
+73 silly idealTree ├── glob@7.1.2
+73 silly idealTree ├── growl@1.10.5
+73 silly idealTree ├── has-flag@3.0.0
+73 silly idealTree ├── he@1.1.1
+73 silly idealTree ├── inflight@1.0.6
+73 silly idealTree ├── inherits@2.0.3
+73 silly idealTree ├── jparticles@2.0.1
+73 silly idealTree ├── minimatch@3.0.4
+73 silly idealTree ├── minimist@0.0.8
+73 silly idealTree ├── mkdirp@0.5.1
+73 silly idealTree ├── mocha@5.2.0
+73 silly idealTree ├── ms@2.0.0
+73 silly idealTree ├── nodemailer@4.6.7
+73 silly idealTree ├── once@1.4.0
+73 silly idealTree ├── path-is-absolute@1.0.1
+73 silly idealTree ├── pathval@1.1.0
+73 silly idealTree ├── supports-color@5.4.0
+73 silly idealTree ├── type-detect@4.0.8
+73 silly idealTree └── wrappy@1.0.2
+74 silly generateActionsToTake Starting
+75 silly install generateActionsToTake
+76 warn checkPermissions Missing write access to /home/sorayasm/node_modules
+77 silly rollbackFailedOptional Starting
+78 silly rollbackFailedOptional Finishing
+79 silly runTopLevelLifecycles Starting
+80 silly runTopLevelLifecycles Finishing
+81 silly install printInstalled
+82 warn enoent ENOENT: no such file or directory, open '/home/sorayasm/package.json'
+83 warn sorayasm No description
+84 warn sorayasm No repository field.
+85 warn sorayasm No README data
+86 warn sorayasm No license field.
+87 verbose stack Error: EACCES: permission denied, access '/home/sorayasm/node_modules'
+88 verbose cwd /home/sorayasm/Documentos/Porfolio
+89 error Linux 4.15.0-33-generic
+90 error argv "/usr/bin/node" "/usr/bin/npm" "install" "jparticles"
+91 error node v8.10.0
+92 error npm  v3.5.2
+93 error path /home/sorayasm/node_modules
+94 error code EACCES
+95 error errno -13
+96 error syscall access
+97 error Error: EACCES: permission denied, access '/home/sorayasm/node_modules'
+97 error  { Error: EACCES: permission denied, access '/home/sorayasm/node_modules'
+97 error   errno: -13,
+97 error   code: 'EACCES',
+97 error   syscall: 'access',
+97 error   path: '/home/sorayasm/node_modules' }
+98 error Please try running this command again as root/Administrator.
+99 verbose exit [ -13, true ]
