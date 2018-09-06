@@ -1,11 +1,11 @@
 /* General Styles */
 
-html,
-body {
+html {
     height: 100%;
 }
 
 body {
+    background: linear-gradient(to right, #248052, #0a9dd3);
     display: -ms-flexbox;
     display: flex;
     color: #fff;
