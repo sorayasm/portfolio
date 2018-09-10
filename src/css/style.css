@@ -1,11 +1,8 @@
 /* General Styles */
 
-/*General Styles*/
-
-body {
-    background: linear-gradient(to right, #248052, #0a9dd3);
-
+.container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0; 
 }
-
-
 
