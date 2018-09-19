@@ -34,5 +34,6 @@ let text = new Array(
      }
     }
     
-    
     typewriter();
+
+    

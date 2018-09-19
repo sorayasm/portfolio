@@ -1,18 +1,14 @@
 /* General Styles */
-.body {
+
+html body {
+    background-color: #f1dfd0;
     font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-margin-left: -15px;
-margin-right: -15px;
-}
-.container-fluid {
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0; 
+    font-size: 15px;
 }
 
 .navbar-custom {
-    background-color: #292929;
+    background-color: #b82222;
+    font-weight: bold;
 }
 
 /* typewriter */
@@ -23,6 +19,5 @@ margin-right: -15px;
 }
 
 #text{
-    font-size: 22px;
+    font-size: 20px;
 }
-/* timeline */
