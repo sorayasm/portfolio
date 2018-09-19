@@ -36,4 +36,22 @@ let text = new Array(
     
     typewriter();
 
-    
+
+//Background
+function background() {
+    let url = (`https://api.nasa.gov/planetary/apod?api_key=Nc6bWvHOQZKE8C4Et3nmMd4yTZf4tkW4TJUOcQ2N`);
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const link = data.url;
+            const title = data.title;
+            const copyright = data.copyright;
+            document.body.style.backgroundImage = "url('" + link + "')"; 
+            const footer = document.getElementById("nasadata");
+            const p = document.createElement("p");
+            p.innerHTML = `<p>Fotografía de fondo: Imagen del día de la Nasa. Título: ` + title + ". Copyright: " + copyright +`</p>`;
+            footer.appendChild(p);
+
+
+        })
+} background()
