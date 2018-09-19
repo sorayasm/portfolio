@@ -1,7 +1,7 @@
 /* General Styles */
 
 html body {
-    background-color: #000000;
+    background-color: #151515ab;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     color: aliceblue;
@@ -15,12 +15,12 @@ html body {
 }
 
 .navbar-custom {
-    background-color: #000000ad;
+    background-color: #151515ab;
     font-weight: bold;
 }
 
 .footer {
-    background-color: #000000ad;
+    background-color: #151515ab;
     font-size: 11px;
     color: aliceblue;
     position: fixed;
@@ -34,15 +34,12 @@ html body {
 /* typewriter */
 
 .type {
-    min-height: 18em;
-    height: 50%;
-    width: 90%;
-    background-color: #000000ad;
-    margin: 3em auto;
-    padding: 2em;
- 
+    background-color: #151515ab;
+    margin: 3em;
+    padding: 1.5em;
 }
 
 #text{
-    font-size: 1.5rem;
+    font-size: 2rem;
+    min-height: 8em;
 }
