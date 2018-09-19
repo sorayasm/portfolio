@@ -1,0 +1,48 @@
+/* General Styles */
+
+html body {
+    background-color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.navbar-custom {
+    background-color: #000000ad;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #000000ad;
+    font-size: 11px;
+    color: aliceblue;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* typewriter */
+
+.type {
+    min-height: 18em;
+    height: 50%;
+    width: 90%;
+    background-color: #000000ad;
+    margin: 3em auto;
+    padding: 2em;
+ 
+}
+
+#text{
+    font-size: 1.5rem;
+}
