@@ -14,32 +14,39 @@ html body {
     -o-background-size: cover;
 }
 
+/* Navbar */
 .navbar-custom {
     background-color: #151515ab;
-    font-weight: bold;
 }
 
-.footer {
-    background-color: #151515ab;
-    font-size: 11px;
-    color: aliceblue;
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-/* typewriter */
+/* yTpewriter */
 
 .type {
     background-color: #151515ab;
-    margin: 3em;
+    margin: 2em;
     padding: 1.5em;
 }
 
 #text{
     font-size: 2rem;
     min-height: 8em;
+}
+
+/* Buttons right*/
+ .brbox{
+    margin: 2em;
+    padding: 1.5em;
+ }
+
+/* Footer */
+.footer {
+    background-color: #151515ab;
+    font-size: 11px;
+    text-align: center;
+    color: aliceblue;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
