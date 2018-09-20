@@ -1,7 +1,7 @@
 /* General Styles */
 
 html body {
-    background-color: #151515ab;
+    background-color:black;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     color: aliceblue;
@@ -16,12 +16,10 @@ html body {
 
 .navbar-custom {
     background-color: #151515ab;
-    font-weight: bold;
 }
 
-.footer {
+footer {
     background-color: #151515ab;
-    font-size: 11px;
     color: aliceblue;
     position: fixed;
     bottom: 0;
@@ -40,6 +38,10 @@ html body {
 }
 
 #text{
-    font-size: 2rem;
+    font-size: 1rem;
     min-height: 8em;
+}
+
+#nasadata {
+    font-size: .9rem;
 }
