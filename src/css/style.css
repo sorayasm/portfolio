@@ -5,7 +5,7 @@ html body {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     color: aliceblue;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-attachment: fixed;
     background-position: top;
     -webkit-background-size: cover;
@@ -14,34 +14,97 @@ html body {
     -o-background-size: cover;
 }
 
-.navbar-custom {
-    background-color: #151515ab;
+h1{
+    font-family: "Ubuntu", sans-serif;
+    color:black;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
+button {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: #151515ab;
+    border: none;
+}
+
+/* Header*/ 
+.navbar-custom {
+    background-color: #151515bd;
+}
+#logo{
+    font-family: "Merienda", cursive;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* Hero */
+#hero{
+    height: 28em;
+    background-color: #15151546;
+}
+
+.type {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+/* Portfolio*/
+#porfolio {
+    background-color: aliceblue;
+    height: 32em;
+    text-align: center;
+}
+
+
+/* Animation */
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;
+}
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideanim::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+/* Footer */
 footer {
     background-color: #151515ab;
     color: aliceblue;
-    position: fixed;
     bottom: 0;
     text-align: center;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
-/* typewriter */
-
-.type {
-    background-color: #151515ab;
-    margin: 3em;
-    padding: 1.5em;
-}
-
-#text{
-    font-size: 1rem;
-    min-height: 8em;
-}
-
 #nasadata {
     font-size: .9rem;
 }
