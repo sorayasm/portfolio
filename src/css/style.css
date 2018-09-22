@@ -21,6 +21,13 @@ h1{
     margin-bottom: 2em;
 }
 
+h3{
+    font-family: "Ubuntu", sans-serif;
+    color:black;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+
 button {
     font-family: "Ubuntu", sans-serif;
     font-size: 20px;
@@ -52,7 +59,7 @@ button {
     text-align: center;
 }
 
-span {
+#ssm {
     border-right: .05em solid;
     animation: caret 1s steps(1) infinite;
   }
@@ -63,37 +70,63 @@ span {
     }
   }
 
+.icon-scroll,
+.icon-scroll:before {
+    position: absolute;
+    left: 50%;
+}
+  
+.icon-scroll {
+    width: 40px;
+    height: 70px;
+    margin-left: -20px;
+    top: 6em;
+    box-shadow: inset 0 0 0 1px #fff;
+    border-radius: 25px;
+  }
+.icon-scroll:before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+  }
+  @keyframes scroll {
+    0% {
+      opacity: 1
+    }
+    100%{
+      opacity: 0;
+      transform: translateY(46px);
+    }
+  }
 /* Portfolio*/
 #porfolio {
     background-color: aliceblue;
-    height: 32em;
+    text-align: center;
+    color: black; 
+    padding-bottom: 2em;
+}
+.img {
+    width: 200px;
+    margin: 0 auto;
+}
+.card {
+    padding-top: 1em;
+    width: 100%;
     text-align: center;
 }
 
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); }
 
-/* Animation */
-.slideanim {
-    visibility:hidden;
-    visibility:visible\9;
-}
-.slideanim.slide {                  
-    visibility: visible;                  
-    animation: slide 1s;
-}
-.slideanim::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-@keyframes slide {
-    0% {
-        opacity: 0;
-        transform: translateY(50%);
-    } 
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    } 
+    .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 /* Footer */
 footer {
@@ -108,3 +141,4 @@ footer {
 #nasadata {
     font-size: .9rem;
 }
+

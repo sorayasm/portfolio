@@ -20,7 +20,7 @@ let text = new Array(
      while ( iRow < iIndex ) {
       sContents += text[iRow++] + "<br/>";
      }
-     destination.innerHTML = sContents + text[iIndex].substring(0, iTextPos) + '<span aria-hidden="true"></span>';
+     destination.innerHTML = sContents + text[iIndex].substring(0, iTextPos) + '<span id="ssm" aria-hidden="true"></span>';
      if ( iTextPos++ == iArrLength ) {
       iTextPos = 0;
       iIndex++;
@@ -42,7 +42,7 @@ function background() {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            const link = data.url;
+            const link = data.hdurl;
             const title = data.title;
             const copyright = data.copyright;
             document.body.style.backgroundImage = "url('" + link + "')"; 
