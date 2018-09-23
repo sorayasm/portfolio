@@ -1,7 +1,6 @@
 // Typewriter Effect
 let text = new Array(
-    "Mi nombre es Soraya Sacaan M.",
-    "Soy Front End Developer Junior y Periodista Digital."
+    "Soraya Sacaan M.","Front End Developer"
     );
     let iSpeed = 100; 
     let iIndex = 0; 
@@ -19,15 +18,15 @@ let text = new Array(
     const destination = document.getElementById("text");
      
      while ( iRow < iIndex ) {
-      sContents += text[iRow++] + '<br />';
+      sContents += text[iRow++] + "<br/>";
      }
-     destination.innerHTML = sContents + text[iIndex].substring(0, iTextPos) + "_";
+     destination.innerHTML = sContents + text[iIndex].substring(0, iTextPos) + '<span id="ssm" aria-hidden="true"></span>';
      if ( iTextPos++ == iArrLength ) {
       iTextPos = 0;
       iIndex++;
       if ( iIndex != text.length ) {
        iArrLength = text[iIndex].length;
-       setTimeout("typewriter()", 500);
+       setTimeout("typewriter()", 300);
       }
      } else {
       setTimeout("typewriter()", iSpeed);
@@ -43,14 +42,14 @@ function background() {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            const link = data.url;
+            const link = data.hdurl;
             const title = data.title;
             const copyright = data.copyright;
             document.body.style.backgroundImage = "url('" + link + "')"; 
-            const footer = document.getElementById("nasadata");
+            const nasa = document.getElementById("nasadata");
             const p = document.createElement("p");
-            p.innerHTML = `<p>Fotografía de fondo: Imagen del día de la Nasa. Título: ` + title + ". Copyright: " + copyright +`</p>`;
-            footer.appendChild(p);
+            p.innerHTML = `<p>Fotografía de fondo: Imagen del día de la Nasa. Título: ` + title + ". Copyright: " + copyright +`.</p>`;
+            nasa.appendChild(p);
 
 
         })

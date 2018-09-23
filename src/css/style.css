@@ -1,11 +1,11 @@
 /* General Styles */
 
 html body {
-    background-color: #151515ab;
+    background-color:black;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     color: aliceblue;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-attachment: fixed;
     background-position: top;
     -webkit-background-size: cover;
@@ -14,39 +14,131 @@ html body {
     -o-background-size: cover;
 }
 
-/* Navbar */
-.navbar-custom {
-    background-color: #151515ab;
+h1{
+    font-family: "Ubuntu", sans-serif;
+    color:black;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
-/* yTpewriter */
+h3{
+    font-family: "Ubuntu", sans-serif;
+    color:black;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+
+button {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: #151515ab;
+    border: none;
+}
+
+/* Header*/ 
+.navbar-custom {
+    background-color: #151515bd;
+}
+#logo{
+    font-family: "Merienda", cursive;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* Hero */
+#hero{
+    height: 28em;
+    background-color: #15151546;
+}
 
 .type {
-    background-color: #151515ab;
-    margin: 2em;
-    padding: 1.5em;
-}
-
-#text{
-    font-size: 2rem;
-    min-height: 8em;
-}
-
-/* Buttons right*/
- .brbox{
-    margin: 2em;
-    padding: 1.5em;
- }
-
-/* Footer */
-.footer {
-    background-color: #151515ab;
-    font-size: 11px;
+    font-size: 2.2rem;
     text-align: center;
+}
+
+#ssm {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+.icon-scroll,
+.icon-scroll:before {
+    position: absolute;
+    left: 50%;
+}
+  
+.icon-scroll {
+    width: 40px;
+    height: 70px;
+    margin-left: -20px;
+    top: 6em;
+    box-shadow: inset 0 0 0 1px #fff;
+    border-radius: 25px;
+  }
+.icon-scroll:before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+  }
+  @keyframes scroll {
+    0% {
+      opacity: 1
+    }
+    100%{
+      opacity: 0;
+      transform: translateY(46px);
+    }
+  }
+/* Portfolio*/
+#porfolio {
+    background-color: aliceblue;
+    text-align: center;
+    color: black; 
+    padding-bottom: 2em;
+}
+.img {
+    width: 200px;
+    margin: 0 auto;
+}
+.card {
+    padding-top: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); }
+
+    .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+/* Footer */
+footer {
+    background-color: #151515ab;
     color: aliceblue;
-    position: fixed;
     bottom: 0;
+    text-align: center;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+#nasadata {
+    font-size: .9rem;
+}
+
