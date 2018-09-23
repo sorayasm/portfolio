@@ -5,7 +5,7 @@ html body {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     color: aliceblue;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top;
     -webkit-background-size: cover;
@@ -13,8 +13,6 @@ html body {
     background-size: cover;
     -o-background-size: cover;
 }
-
-
 
 button {
     font-family: "Ubuntu", sans-serif;
@@ -154,9 +152,10 @@ footer {
     color: aliceblue;
     bottom: 0;
     text-align: center;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    position: relative;
+    clear:both;
+    padding-top:20px;
+    
 }
 #nasadata {
     font-size: .9rem;
