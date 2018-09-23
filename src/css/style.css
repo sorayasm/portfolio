@@ -14,19 +14,7 @@ html body {
     -o-background-size: cover;
 }
 
-h1{
-    font-family: "Ubuntu", sans-serif;
-    color:black;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
 
-h3{
-    font-family: "Ubuntu", sans-serif;
-    color:black;
-    margin-top: 1.5em;
-    margin-bottom: .5em;
-}
 
 button {
     font-family: "Ubuntu", sans-serif;
@@ -34,7 +22,6 @@ button {
     text-transform: uppercase;
     font-weight: bolder;
     color: aliceblue;
-    background-color: #151515ab;
     border: none;
 }
 
@@ -50,11 +37,12 @@ button {
 
 /* Hero */
 #hero{
-    height: 28em;
+    height: 30em;
     background-color: #15151546;
 }
 
 .type {
+    padding-top: 4em;
     font-size: 2.2rem;
     text-align: center;
 }
@@ -80,15 +68,15 @@ button {
     width: 40px;
     height: 70px;
     margin-left: -20px;
-    top: 6em;
-    box-shadow: inset 0 0 0 1px #fff;
+    top: 9em;
+    box-shadow: inset 0 0 0 1px ;
     border-radius: 25px;
   }
 .icon-scroll:before{
     content: '';
     width: 8px;
     height: 8px;
-    background: #fff;
+    background: #009966;
     margin-left: -4px;
     top: 8px;
     border-radius: 4px;
@@ -112,6 +100,35 @@ button {
     color: black; 
     padding-bottom: 2em;
 }
+
+#porfolio h1{
+    font-family: "Ubuntu", sans-serif;
+    color:#009975;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+#porfolio h3{
+    font-family: "Ubuntu", sans-serif;
+    color:#00994c;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+
+#porfolio i {
+    color:#00998f;
+    margin: 10px;
+}
+.icons img {
+    width: 40px;
+    margin: 0px 10px 25px 10px;
+}
+
+.img-soraya {
+    width: 100px;
+    margin: 2em;
+}
+
 .img {
     width: 200px;
     margin: 0 auto;
@@ -122,6 +139,9 @@ button {
     text-align: center;
 }
 
+.card-text{
+    font-size: .9rem;
+}
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); }
 
