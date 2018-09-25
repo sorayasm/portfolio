@@ -91,6 +91,12 @@ button {
       transform: translateY(46px);
     }
   }
+/* Info */
+
+#nasadata {
+font-size: .9rem;
+text-align: center;
+}
 /* Portfolio*/
 #porfolio {
     background-color: aliceblue;
@@ -157,7 +163,5 @@ footer {
     padding-top:20px;
     
 }
-#nasadata {
-    font-size: .9rem;
-}
+
 
