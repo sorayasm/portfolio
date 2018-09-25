@@ -5,7 +5,7 @@ html body {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     color: aliceblue;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-attachment: fixed;
     background-position: top;
     -webkit-background-size: cover;
