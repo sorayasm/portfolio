@@ -25,8 +25,9 @@ button {
 
 /* Header*/ 
 .navbar-custom {
-    background-color: #151515bd;
+    background-color: #151515f3;
 }
+
 #logo{
     font-family: "Merienda", cursive;
     font-size: 20px;
@@ -36,13 +37,28 @@ button {
 /* Hero */
 #hero{
     height: 30em;
-    background-color: #15151546;
+    background-color: rgba(0, 0, 0, 0.609);
 }
 
 .type {
-    padding-top: 4em;
+    margin-top: 4em;
     font-size: 2.2rem;
     text-align: center;
+}
+
+#text {
+    padding-top:1em;
+    height: 4em;
+    width: 11em;
+
+}
+
+.bkg{
+    background-color:#001a24f8;
+    border-radius: 25px;
+    height: 8.5em;
+    width: 11em;
+    margin: 0 auto;
 }
 
 #ssm {
@@ -66,7 +82,7 @@ button {
     width: 40px;
     height: 70px;
     margin-left: -20px;
-    top: 9em;
+    top: 5em;
     box-shadow: inset 0 0 0 1px ;
     border-radius: 25px;
   }
@@ -96,7 +112,12 @@ button {
 #nasadata {
 font-size: .9rem;
 text-align: center;
+background-color: rgba(26, 25, 25, 0.945);
+margin: -15px;
+padding: 10px 0px 10px 0px;
+
 }
+
 /* Portfolio*/
 #porfolio {
     background-color: aliceblue;

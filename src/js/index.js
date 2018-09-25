@@ -44,11 +44,10 @@ function background() {
         .then(data => {
             const link = data.url;
             const title = data.title;
-            const copyright = data.copyright;
             document.body.style.backgroundImage = "url('" + link + "')"; 
             const nasa = document.getElementById("nasadata");
             const p = document.createElement("p");
-            p.innerHTML = `<p>Fotografía de fondo: Imagen del día de la Nasa. Título: ` + title + ". Copyright: " + copyright +`.</p>`;
+            p.innerHTML = `<p>Fotografía de fondo: <a href="https://apod.nasa.gov/apod/astropix.html">Astronomy Picture of the Day</a>. Título: ` + title + ". Copyright: " + copyright +`.</p>`;
             nasa.appendChild(p);
 
 
