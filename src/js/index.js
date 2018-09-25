@@ -42,7 +42,7 @@ function background() {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            const link = data.hdurl;
+            const link = data.url;
             const title = data.title;
             const copyright = data.copyright;
             document.body.style.backgroundImage = "url('" + link + "')"; 
