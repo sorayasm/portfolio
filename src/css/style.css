@@ -5,7 +5,8 @@ html body {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     color: aliceblue;
-    background-repeat: repeat-y;
+    background-image: url(https://source.unsplash.com/featured/?space);
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top;
     -webkit-background-size: cover;
@@ -25,7 +26,7 @@ button {
 
 /* Header*/ 
 .navbar-custom {
-    background-color: #151515f3;
+    background-color: #151515bd;
 }
 
 #logo{
@@ -37,13 +38,13 @@ button {
 /* Hero */
 #hero{
     height: 30em;
-    background-color: rgba(0, 0, 0, 0.609);
 }
 
 .type {
     margin-top: 4em;
     font-size: 2.2rem;
     text-align: center;
+    color: aliceblue;
 }
 
 #text {
@@ -108,6 +109,9 @@ button {
     }
   }
 /* Info */
+#info{
+    height: 3em; 
+}
 
 #nasadata {
 font-size: .9rem;
@@ -115,7 +119,7 @@ text-align: center;
 background-color: rgba(26, 25, 25, 0.945);
 margin: -15px;
 padding: 10px 0px 10px 0px;
-
+color: white;
 }
 
 /* Portfolio*/

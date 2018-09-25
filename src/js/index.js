@@ -37,6 +37,7 @@ let text = new Array(
 
 
 //Background
+/*
 function background() {
     let url = (`https://api.nasa.gov/planetary/apod?api_key=Nc6bWvHOQZKE8C4Et3nmMd4yTZf4tkW4TJUOcQ2N`);
     fetch(url)
@@ -47,9 +48,8 @@ function background() {
             document.body.style.backgroundImage = "url('" + link + "')"; 
             const nasa = document.getElementById("nasadata");
             const p = document.createElement("p");
-            p.innerHTML = `<p>Fotografía de fondo: <a href="https://apod.nasa.gov/apod/astropix.html">Astronomy Picture of the Day</a>. Título: ` + title + ". Copyright: " + copyright +`.</p>`;
+            p.innerHTML = `<p>Fotografía de fondo: <a href="https://apod.nasa.gov/apod/astropix.html">Astronomy Picture of the Day</a>. Título: ` + title + `.</p>`;
             nasa.appendChild(p);
-
-
         })
 } background()
+*/
