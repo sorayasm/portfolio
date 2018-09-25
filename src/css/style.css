@@ -5,7 +5,7 @@ html body {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     color: aliceblue;
-    background-image: url(https://source.unsplash.com/featured/?nature);
+    background-image: url(../img/rich-tervet-662093-unsplash.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top;
@@ -55,7 +55,7 @@ button {
 }
 
 .bkg{
-    background-color:#001a24f8;
+    background-color:#252525b7;
     border-radius: 25px;
     height: 8.5em;
     width: 11em;
@@ -91,7 +91,7 @@ button {
     content: '';
     width: 8px;
     height: 8px;
-    background: #009966;
+    background: #ffffff;
     margin-left: -4px;
     top: 8px;
     border-radius: 4px;
