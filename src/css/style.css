@@ -122,30 +122,25 @@ padding: 10px 0px 10px 0px;
 color: white;
 }
 
-/* Portfolio*/
-#porfolio {
-    background-color: aliceblue;
+/* About */
+#about {
+    background-color: rgba(29, 29, 29, 0.9);
     text-align: center;
-    color: black; 
-    padding-bottom: 2em;
+    padding: 2em;
 }
 
-#porfolio h1{
+#about h1{
     font-family: "Ubuntu", sans-serif;
-    color:#009975;
-    margin-top: 1.5em;
-    margin-bottom: 1em;
+    color:#5acab2;
 }
 
-#porfolio h3{
-    font-family: "Ubuntu", sans-serif;
-    color:#00994c;
-    margin-top: 1.5em;
-    margin-bottom: .5em;
+.img-soraya {
+    width: 100px;
+    margin: 2em;
 }
 
-#porfolio i {
-    color:#00998f;
+#about i {
+    color:#5acab2;
     margin: 10px;
 }
 .icons img {
@@ -153,9 +148,20 @@ color: white;
     margin: 0px 10px 25px 10px;
 }
 
-.img-soraya {
-    width: 100px;
-    margin: 2em;
+/* Portfolio*/
+#portfolio {
+    background-color: rgba(240, 248, 255, 0.9);
+    text-align: center;
+    color: black; 
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#portfolio h1{
+    font-family: "Ubuntu", sans-serif;
+    color:#5acab2;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .img {
@@ -164,6 +170,7 @@ color: white;
 }
 .card {
     padding-top: 1em;
+    margin: 1.5em auto;
     width: 100%;
     text-align: center;
 }
@@ -171,12 +178,7 @@ color: white;
 .card-text{
     font-size: .9rem;
 }
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); }
 
-    .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}
 /* Footer */
 footer {
     background-color: #151515ab;
