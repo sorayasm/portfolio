@@ -147,6 +147,7 @@ html, body {
     padding-top: .8em;
     margin: 1em auto;
     width: 100%;
+    max-width: 250px;
     text-align: center;
     background-color:#eeeeee; 
 }
