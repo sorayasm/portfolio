@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Merienda|Open+Sans|Ubuntu" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda|Open+Sans|Ubuntu"> 
     <link rel="stylesheet" href="src/css/style.css" type="text/css" media="screen">
 
 </head>
@@ -17,9 +17,9 @@
 <div class="container-fluid">
   <header class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">
-      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top bg-inverse">
         <div class="container">
-                <a class="navbar-brand" id="logo" href="#">
+                <a class="navbar-brand logo" href="#">
                  SSM
                 </a>
             <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar">
@@ -28,17 +28,17 @@
             <div class="navbar-collapse collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/in/sorayasm/"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    </li>
+						<a class="nav-link" href="#about"><i class="fas fa-user"></i> Acerca de mi </a>
+					</li>
+					<li class="nav-item">
+                        <a class="nav-link" href="#portfolio"><i class="fas fa-space-shuttle"></i> Portafolio </a>
+					</li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://bit.ly/CVSorayaSM"><i class="fas fa-file"></i> CV </a>
-										</li>
-										<li class="nav-item">
-                        <a class="nav-link" href="https://github.com/sorayasm"><i class="fab fa-github-square"></i> Github</a>
-                    </li>
-										<li class="nav-item">
-                        <a class="nav-link" href="mailto:soraya.sacaan@gmail.com"><i class="fas fa-envelope-square"></i> Contacto</a>
-										</li>
+					</li>
+					<li class="nav-item">
+                        <a class="nav-link" href="mailto:soraya.sacaan@gmail.com"><i class="fas fa-at"></i> Contacto </a>
+					</li>
                 </ul>
             </div>
         </div>
@@ -46,76 +46,125 @@
     </div>
 </header>
 <section id="hero" class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 type">
-		<div class="bkg">
-			<div id="text"></div>   
-			<div class='icon-scroll'></div>
-		</div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+			<div class="legend"></div>
+<div class="view" id="map"></div>
+		<div class="info" >
+			<h1 class="logo">Soraya Sacaan Maturana</h1>
+			<p>Front End Developer</p>
+			
+		</div>   
 	</div>
 </section>
 <section id="about" class="row">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-			<h1>Acerca de mi</h1>
-		</div>
-		<div>
-			<img src="src/img/soraya.png" class="rounded-circle img-soraya" alt="Soraya">
+		<h1>Acerca de mi</h1>
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+				<img src="src/img/soraya.png" class="rounded-circle img-soraya" alt="Soraya">
+				<br>
+				<a href="https:bit.ly/CVSorayaSM/" class="btn"><i class="fas fa-file"></i> CV</a>
+				<a href="http://www.linkedin.com/in/sorayasm" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+				<a href="https://github.com/sorayasm/" class="btn"><i class="fab fa-github-square"></i> Github</a>
+			</div>
+			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 about-text">
 			<p>Hola, Soy Soraya Sacaan M.</p>
-			<p> Soy Front End Developer y Periodista. Me encanta la tecnología y la innovación, es por eso que llevo más de una década realizando proyectos digitales para empresas, emprendimientos y ONGs. Me especializo en desarrollar sitios web desde cero para la implementación exitosa de estrategias de usabilidad web.</p>
+			<p> Soy Front End Developer y Periodista. Me encanta la tecnología y la innovación, es por eso que llevo más de una década realizando proyectos digitales para potenciar la transformación digital de empresas, emprendimientos y ONGs. Me especializo en desarrollar sitios web desde cero para la implementación exitosa de estrategias de usabilidad web.</p>
 			<br>
-			<p><i class="fab fa-3x fa-html5" title="HTML5"></i><i class="fab fa-3x fa-css3-alt" title="CSS3"></i><i class="fab fa-3x fa-js" title="Javascript"></i><i class="fab fa-3x fa-angular" title="Angular 6"></i><i class="fab fa-3x fa-git-square" title="Git"></i></p>
-			<p class="icons"><img src="src/img/bootstrap-solid.svg" title="Bootstrap"><img src="src/img/nodejs.png" title="NodeJS"><img src="src/img/firebase.png" title="Firebase">
-			<!--img src="src/img/gcp.png" title="Google Cloud Platform"></p-->
-		</div>
+				<p class="icons">
+					<img src="src/img/html5.png" title="HTML5" alt="" srcset="">
+					<img src="src/img/css3.png" title="CSS3" alt="" srcset="">
+					<img src="src/img/js.png" title="Javascript" alt="" srcset="">
+					<img src="src/img/angular.png" title="Angular 6" alt="" srcset="">
+					<img src="src/img/git.png" title="Git" alt="" srcset="">
+					<img src="src/img/bootstrap-solid.svg" title="Bootstrap">
+					<img src="src/img/nodejs.png" title="NodeJS">
+					<img src="src/img/firebase.png" title="Firebase">
+				<!--img src="src/img/gcp.png" title="Google Cloud Platform"-->
+				</p>
+				<br>
+			</div>
+		</div>	
 	</div>
 </section>
 <section id="portfolio">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 		<h1>Proyectos</h1>
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col">
 				<div class="card">
-					<img class="card-img-top img" src="src/img/translab.png" alt="Card image">
+					<img class="card-img-top img" src="src/img/translab.jpg" alt="Card image">
 					<div class="card-body">
 							<h4 class="card-title">Trans-Lab</h4>
-							<p class="card-text">Proyecto con API de Tarjeta BIP!. Creado con HTML5, CSS3, Javascript ECMA 6 y Bootstrap.</p>
-							<a href="https://sorayasm.github.io/trans-lab/" class="btn btn-primary">Ver Demo</a>
-							<a href="https://github.com/sorayasm/trans-lab" class="btn btn-primary">Ver código</a>
+							<p class="card-text">Proyecto con API de Tarjeta BIP! para leer saldo de tarjetas. Creado con HTML5, CSS3, Javascript ECMA 6 y Bootstrap 4.</p>
+							<a href="https://sorayasm.github.io/trans-lab/" class="btn">Demo</a>
+							<a href="https://github.com/sorayasm/trans-lab" class="btn">Código</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col">
 				<div class="card">
-					<img class="card-img-top img" src="src/img/4edu.png" alt="Card image">
+					<img class="card-img-top img" src="src/img/4edu.jpg" alt="Card image">
 					<div class="card-body">
 							<h4 class="card-title">4Edu</h4>
-							<p class="card-text">Proyecto Red Social Educativa. Creado con HTML5, CSS3, Javascript ECMA 6, Bootstrap y Firebase.</p>
-							<a href="https://sorayasm.github.io/scl-2018-05-bc-core-pm-socialnetwork/src/" class="btn btn-primary">Ver Demo</a>
-							<a href="https://github.com/sorayasm/scl-2018-05-bc-core-pm-socialnetwork" class="btn btn-primary">Ver código</a>
+							<p class="card-text">Proyecto Red Social Educativa. Creado con HTML5, CSS3, Javascript ECMA 6, Bootstrap 4 y Firebase.</p>
+							<a href="https://sorayasm.github.io/scl-2018-05-bc-core-pm-socialnetwork/src/" class="btn">Demo</a>
+							<a href="https://github.com/sorayasm/scl-2018-05-bc-core-pm-socialnetwork" class="btn">Código</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col">
 				<div class="card">
-					<img class="card-img-top img" src="src/img/foodmap.png" alt="Card image">
+					<img class="card-img-top img" src="src/img/foodmap.jpg" alt="Card image">
 					<div class="card-body">
 							<h4 class="card-title">FoodMap</h4>
-							<p class="card-text">Proyecto con API de Google Maps. Creado con HTML5, CSS3, Javascript ECMA 6 y Bootstrap.</p>
-							<a href="https://sorayasm.github.io/scl-2018-01-foodmap/src/index.html" class="btn btn-primary">Ver Demo</a>
-							<a href="https://github.com/sorayasm/scl-2018-01-foodmap" class="btn btn-primary">Ver código</a>
+							<p class="card-text">Proyecto con API de Google Maps para buscar restaurants. Creado con HTML5, CSS3, Javascript ECMA 6 y Bootstrap 4.</p>
+							<a href="https://sorayasm.github.io/scl-2018-01-foodmap/src/index.html" class="btn">Demo</a>
+							<a href="https://github.com/sorayasm/scl-2018-01-foodmap" class="btn">Código</a>
 					</div>
 				</div>
 			</div>
+			<div class="col">
+				<div class="card">
+					<img class="card-img-top img" src="src/img/queltehue.jpg" alt="Card image">
+					<div class="card-body">
+							<h4 class="card-title">Queltehue</h4>
+							<p class="card-text">Proyecto de recepción virtual para Conserjería. Creado con HTML5, CSS3, Javascript ECMA 6, Bootstrap 4 y Firebase.</p>
+							<a href="https://sorayasm.github.io/scl-2018-01-ProyectoFinalCore/src/index.html" class="btn">Demo</a>
+							<a href="https://github.com/sorayasm/scl-2018-01-ProyectoFinalCore" class="btn">Código</a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+					<div class="card">
+						<img class="card-img-top img" src="src/img/trabun.jpg" alt="Card image">
+						<div class="card-body">
+								<h4 class="card-title">FoodMap</h4>
+								<p class="card-text">Proyecto de Red Social Saludable. Creado con HTML5, CSS3, Javascript ECMA 6, Angular 6 y Firebase.</p>
+								<a href="https://trabun-4b6cd.firebaseapp.com" class="btn">Demo</a>
+								<a href="https://github.com/sorayasm/RedSocialTrabun" class="btn">Código</a>
+						</div>
+					</div>
+				</div>
 		</div>
 	</div>
 </section>
 <footer class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">
-        <p>@SorayaSM</p>
+		<p>Portafolio de @SorayaSM</p>
+		<a href="https:bit.ly/CVSorayaSM/" class="btn"><i class="fas fa-file"></i> CV</a>
+		<a href="http://www.linkedin.com/in/sorayasm" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+		<a href="https://github.com/sorayasm/" class="btn"><i class="fab fa-github-square"></i> Github</a>
+		<a href="mailto:soraya.sacaan@gmail.com" class="btn"><i class="fas fa-at"></i> Contacto </a>
     </div>
 </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="http://d3js.org/topojson.v1.min.js"></script>
+
+
     <script src="src/js/index.js"></script>
 </body>
 
