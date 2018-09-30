@@ -8,6 +8,8 @@ html, body {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     color: aliceblue;
+    background-image: url("https://source.unsplash.com/collection/3273265/1600x900");
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top;
@@ -16,6 +18,7 @@ html, body {
     background-size: cover;
     -o-background-size: cover;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .btn {
@@ -24,6 +27,12 @@ html, body {
     color: whitesmoke;
     border: none;
     background-color: #00838f;
+    margin: 2px;
+}
+
+.btn:hover{
+    color: #00838f;
+    background-color: whitesmoke;
 }
 
 .logo{
@@ -46,42 +55,28 @@ html, body {
 
 /* Hero */
 #hero{
-    height: 100%; 
-    background-color: #222;
+    height: 38em; 
+    background-color: #1a1a1a83;
  }
 
 .info {
-    margin-top: 5em;
+    margin-top: 8em;
     font-size: 2.2rem;
     text-align: center;
-    color: rgb(88, 125, 156);
-}
-.map {
-    background: #222;
-        font-family: sans-serif;
-  }
-  .border {
-    fill: none;
-    stroke: #d9edf7;
-    stroke-width: 1px;
+    color: rgba(255, 255, 255, 0.904);
 }
 
-.regions.selected {
-    fill: #222;
-    stroke: none;
-    transition: all 0.2s ease;
+#hero h1 {
+    font-size: 1.5em;
 }
 
-.regions.selected:hover {
-    fill: #d9edf7;
-    stroke: #d9edf7;
-    stroke-width: 1px;
+#hero h4{
+    font-size: 1em;
 }
 
-.legend {
-    height: 10px;
-    color: #CCC;
-    text-align: center;
+#hero p{
+    font-size: 0.5em;
+    font-style: italic;
 }
 
 /* Info */
@@ -89,18 +84,9 @@ html, body {
     height: 3em; 
 }
 
-#nasadata {
-font-size: .9rem;
-text-align: center;
-background-color: rgba(26, 25, 25, 0.945);
-margin: -15px;
-padding: 10px 0px 10px 0px;
-color: white;
-}
-
 /* About */
 #about {
-    background-color: #616161c2;
+    background-color: #616161d5;
     text-align: center;
     padding: 4em 2em 4em 2em;
     height: 100%; 
