@@ -59,8 +59,6 @@ html, body {
 
 /* Hero */
 #hero{
-    margin-top: 60px;
-    height: 38em; 
     background-color: #1a1a1a83;
  }
 
@@ -83,17 +81,11 @@ html, body {
     font-style: italic;
 }
 
-/* Info */
-#info{
-    height: 3em; 
-}
-
 /* About */
 #about {
     background-color: #616161d5;
     text-align: center;
     padding: 4em 2em 4em 2em;
-    height: 100%; 
     margin: 0 -15px;
 }
 
@@ -132,7 +124,6 @@ html, body {
     background-color: #bcbcbcca;
     text-align: center;
     color: black; 
-    height: 100%; 
     margin: 0 -15px;
     padding: 3em 2em 3.5em 2em;
 }
