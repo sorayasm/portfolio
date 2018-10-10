@@ -85,7 +85,7 @@ html, body {
 #about {
     background-color: #616161d5;
     text-align: center;
-    padding: 4em 2em 4em 2em;
+    padding: 0 2em;
     margin: 0 -15px;
 }
 
@@ -104,7 +104,7 @@ html, body {
     min-width: 120px; 
 }
 .icons{
-    text-align: center;
+    text-align: left;
 }
 
 .icons img {
