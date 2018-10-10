@@ -40,6 +40,10 @@ html, body {
     font-weight: bolder;
 }
 
+.vh {
+    height: 100vh;
+}
+
 /* Header*/ 
 .navbar-custom {
     background-color: #1b1b1bea;
@@ -55,6 +59,7 @@ html, body {
 
 /* Hero */
 #hero{
+    margin-top: 60px;
     height: 38em; 
     background-color: #1a1a1a83;
  }
