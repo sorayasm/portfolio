@@ -88,6 +88,7 @@ html, body {
     padding: 0 2em;
     margin: 0 -15px;
     height: 100%;
+    min-height: 37em;
 }
 
 #about h1{
