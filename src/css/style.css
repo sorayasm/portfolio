@@ -26,12 +26,12 @@ html, body {
     font-size: 16px;
     color: whitesmoke;
     border: none;
-    background-color: #00838f;
+    background-color: #0c8e9c;
     margin: 2px;
 }
 
 .btn:hover{
-    color: #00838f;
+    color: #0c8e9c;
     background-color: whitesmoke;
 }
 
@@ -127,7 +127,7 @@ html, body {
     text-align: center;
     color: black; 
     margin: 0 -15px;
-    padding: 3em 2em 3.5em 2em;
+    padding: 3em 0 3.5em 0;
     height: 100%;
 }
 
@@ -146,7 +146,8 @@ html, body {
     padding-top: .8em;
     margin: 1em auto;
     width: 100%;
-    max-width: 270px;
+    min-width: 270px;
+    max-width: 320px;
     text-align: center;
     background-color:#eeeeee; 
 }
@@ -156,7 +157,7 @@ html, body {
 }
 
 .card-title{
-    color: #005662;
+    color: #0c8e9c;
 }
 /* Footer */
 footer {
