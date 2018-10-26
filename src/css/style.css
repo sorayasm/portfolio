@@ -22,7 +22,7 @@ html, body {
 }
 
 .btn {
-    font-family: "Ubuntu", sans-serif;
+    font-family:  "Merienda";
     font-size: 16px;
     color: whitesmoke;
     border: none;
@@ -83,7 +83,7 @@ html, body {
 
 /* About */
 #about {
-    background-color: #616161d5;
+    background-color: #1e919ec7;
     text-align: center;
     padding: 0 2em;
     margin: 0 -15px;
@@ -92,7 +92,7 @@ html, body {
 }
 
 #about h1{
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Merienda", cursive;
     color:#ffffff;
     padding-top: 1em;
     padding-bottom: 1em,
@@ -123,7 +123,7 @@ html, body {
 
 /* Portfolio*/
 #portfolio {
-    background-color: #bcbcbcca;
+    background-color: #bcbcbcb1;
     text-align: center;
     color: black; 
     margin: 0 -15px;
@@ -132,7 +132,7 @@ html, body {
 }
 
 #portfolio h1{
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Merienda", cursive;
     color:rgb(49, 49, 49);
     padding-top: 1em;
     padding-bottom: 1em;
@@ -161,7 +161,7 @@ html, body {
 }
 /* Footer */
 footer {
-    background-color: rgb(49, 49, 49);
+    background-color:#0c8e9cb1;
     color:#eeeeee;
     text-align: center; 
     padding: 1em;
@@ -169,10 +169,10 @@ footer {
 }
 
 footer .btn {
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Merienda";
     font-size: 12px;
     color: #eeeeee;
     border: none;
-    background-color:rgb(49, 49, 49);
+    background-color: none;
 }
 
