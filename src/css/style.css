@@ -44,7 +44,6 @@ h1{
     font-weight: bolder;
 }
 
-
 /* Header*/ 
 
 .fixed-top {
@@ -80,6 +79,7 @@ h1{
     margin-bottom: 1em;
     max-width: 200px;
     min-width: 120px; 
+    border-radius: 8px;
 }
 
 .col-centered{
@@ -119,10 +119,11 @@ h1{
     margin: 0 auto;
     border-radius: 8px;
 }
+
 .card {
     padding-top: .8em;
-    margin: 0;
-    width: 100%;
+    margin: 1em auto;
+    width: 90%;
     min-width: 270px;
     text-align: center;
     background-color:#eeeeee; 
