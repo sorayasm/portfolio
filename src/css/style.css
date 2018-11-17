@@ -39,10 +39,13 @@ h1{
     background-color: whitesmoke;
 }
 
-.logo{
+.navbar-light .navbar-brand, .navbar-light .navbar-brand:hover
+{
+    color:#0c8e9c;
     font-family: "Krub";
     font-weight: bolder;
 }
+
 
 /* Header*/ 
 
@@ -58,6 +61,14 @@ h1{
     background-color: #f1f1f1ec;
 }
 
+.ml-auto i{
+    color: #0c8e9c;
+}
+
+.ml-auto i:hover{
+    color: #0c8e9c98;
+}
+
 /* About */
 #about {
     text-align: center;
@@ -71,6 +82,14 @@ h1{
     font-family: "Krub";
     padding: 1em auto;
     color: #0c8e9c;
+}
+
+#about i{
+    color: #0c8e9c;
+}
+
+#about i:hover{
+    color: #0c8e9c98;
 }
 
 .img-soraya {
@@ -92,6 +111,7 @@ h1{
     margin: 0px 2px 25px 2px;
 }
 
+
 /* Method*/
 #method{
     padding: 5em 0 3em 0;
@@ -101,6 +121,7 @@ h1{
 
 #method img {
     border: none;
+    margin: 0 auto;
 }
 
 /* Portfolio*/
