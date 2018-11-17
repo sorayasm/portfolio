@@ -7,8 +7,8 @@
 html, body {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
-    color: aliceblue;
-    background-image: url("https://source.unsplash.com/collection/3273265/1600x900");
+    color: black;
+    background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top;
@@ -44,9 +44,6 @@ html, body {
 }
 
 /* Header*/ 
-.navbar-custom {
-    background-color: #0c6c9ccd;
-}
 
 .fixed-top {
     position: fixed;
@@ -56,43 +53,17 @@ html, body {
     z-index: 1030;
 }
 
-/* Hero */
-#hero{
-    background-color: #1a1a1a83;
- }
-
-.info {
-    font-size: 1.7rem;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.904);
-}
-
-#hero h1 {
-    font-size: 1.3em;
-}
-
-#hero h4{
-    font-size: 1em;
-}
-
-#hero p{
-    font-size: 0.5em;
-    font-style: italic;
-}
-
 /* About */
 #about {
-    background-color: #0c6c9ccd;
     text-align: center;
-    padding: 0 2em;
+    padding: 5em 2em;
     margin: 0 -15px;
+    min-height: 100vh;
     height: 100%;
-    min-height: 37em;
 }
 
-#about h1{
+#about h4{
     font-family: "Krub";
-    color:#ffffff;
     padding-top: 1em;
     padding-bottom: 1em,
 }
@@ -100,12 +71,14 @@ html, body {
 .img-soraya {
     width: 80%;
     margin-top: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     max-width: 200px;
     min-width: 120px; 
 }
-.icons{
-    text-align: left;
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }
 
 .icons img {
@@ -113,11 +86,15 @@ html, body {
     margin: 0px 2px 25px 2px;
 }
 
-.about-text{
-    padding-top: 2em;
-    padding-right: 1.2em;
-    text-align: left;
-    font-size: 1.1em;
+/* Method*/
+#method{
+    padding: 3em 0;
+    min-height: 100vh;
+    height: 100%;
+}
+
+#method img {
+    border: none;
 }
 
 /* Portfolio*/
@@ -126,15 +103,14 @@ html, body {
     text-align: center;
     color: black; 
     margin: 0 -15px;
-    padding: 3em 0 3.5em 0;
+    padding: 3em 0;
+    min-height: 100vh;
     height: 100%;
 }
 
 #portfolio h1{
     font-family: "Krub";
     color:rgb(49, 49, 49);
-    padding-top: 1em;
-    padding-bottom: 1em;
 }
 
 .img {
@@ -144,10 +120,9 @@ html, body {
 }
 .card {
     padding-top: .8em;
-    margin: 1em auto;
+    margin: 0;
     width: 100%;
     min-width: 270px;
-    max-width: 320px;
     text-align: center;
     background-color:#eeeeee; 
     border-radius: 8px;
@@ -180,18 +155,10 @@ html, body {
 
 /* Footer */
 footer {
-    background-color:#0c6c9ccd;
+    font-family: "Krub";
+    background-color:#707070cd;
     color:#eeeeee;
     text-align: center; 
     padding: 1em;
     
 }
-
-footer .btn {
-    font-family: "Krub";
-    font-size: 12px;
-    color: #eeeeee;
-    border: none;
-    background-color: none;
-}
-
