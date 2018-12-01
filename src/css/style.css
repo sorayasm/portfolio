@@ -34,21 +34,24 @@ h1{
     margin: 2px;
 }
 
-.btn:hover{
+.btn:hover {
     color: #0c8e9c;
     background-color: whitesmoke;
 }
 
-.navbar-light .navbar-brand, .navbar-light .navbar-brand:hover
-{
-    color:#0c8e9c;
+/* Nav */
+
+.navbar-brand {
+    color:#0c8e9c !important;
     font-family: "Krub";
     font-weight: bolder;
 }
 
+.navbar-nav i{
+    font-size: 1em;
+}
 
 /* Header*/ 
-
 .fixed-top {
     position: fixed;
     top: 0;
