@@ -6,7 +6,7 @@
 
 html, body {
     font-family: "Open Sans", sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     color: black;
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
@@ -21,12 +21,10 @@ html, body {
 }
 
 h1{
-    font-family: "Krub";
     color:#0c8e9c;
 }
 
 .btn {
-    font-family:  "Krub";
     font-size: 14px;
     color: whitesmoke;
     border: none;
@@ -82,7 +80,6 @@ h1{
 }
 
 #about h4{
-    font-family: "Krub";
     padding: 1em auto;
     color: #0c8e9c;
 }
@@ -181,7 +178,6 @@ h1{
 
 /* Footer */
 footer {
-    font-family: "Krub";
     background-color:#707070cd;
     color:#eeeeee;
     text-align: center; 
