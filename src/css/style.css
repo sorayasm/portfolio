@@ -74,7 +74,6 @@ h1{
     text-align: center;
     padding: 5em 2em;
     margin: 0 -15px;
-    min-height: 100vh;
     height: 100%;
 }
 
@@ -114,7 +113,7 @@ h1{
 /* Method*/
 #method{
     padding: 5em 0 3em 0;
-    min-height: 100vh;
+    min-height: 80vh;
     height: 100%;
 }
 
