@@ -1,14 +1,17 @@
 /* General Styles */
+
 * {
     padding: 0;
     margin: 0;
 }
 
-html, body {
+html,
+body {
     font-family: "Open Sans", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     color: black;
     background-image: url("../img/bg.jpg");
+    /* Photo by Hadley Jin on Unsplash */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top;
@@ -20,16 +23,32 @@ html, body {
     scroll-behavior: smooth;
 }
 
-h1{
-    color:#0c8e9c;
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    overflow: hidden;
+}
+
+h1 {
+    color: #0c8e9c;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 .btn {
-    font-size: 14px;
+    font-size: 20px;
     color: whitesmoke;
     border: none;
     background-color: #0c8e9c;
-    margin: 2px;
+    margin-top: 20px;
+    margin-right: 15px;
+    font-family: 'Belleza', sans-serif;
 }
 
 .btn:hover {
@@ -37,18 +56,16 @@ h1{
     background-color: whitesmoke;
 }
 
+
 /* Nav */
 
-.navbar-brand {
-    color:#0c8e9c !important;
-    font-weight: bolder;
+.navbar-nav i {
+    font-size: 30px;
 }
 
-.navbar-nav i{
-    font-size: 1em;
-}
 
-/* Header*/ 
+/* Header*/
+
 .fixed-top {
     position: fixed;
     top: 0;
@@ -58,36 +75,32 @@ h1{
 }
 
 .bg-custom {
-    background-color: #f1f1f1ec;
+    background-color: #ffffff;
 }
 
-.ml-auto i{
+.ml-auto i {
     color: #0c8e9c;
 }
 
-.ml-auto i:hover{
+.ml-auto i:hover {
     color: #0c8e9c98;
 }
 
-/* About */
-#about {
+
+/* Hero */
+
+#hero {
     text-align: center;
-    padding: 5em 2em;
+    padding: 100px 2em 5em 2em;
     margin: 0 -15px;
-    min-height: 100vh;
     height: 100%;
 }
 
-#about h4{
-    padding: 1em auto;
+#hero i {
     color: #0c8e9c;
 }
 
-#about i{
-    color: #0c8e9c;
-}
-
-#about i:hover{
+#hero i:hover {
     color: #0c8e9c98;
 }
 
@@ -95,91 +108,85 @@ h1{
     width: 80%;
     margin-top: 1em;
     margin-bottom: 1em;
-    max-width: 200px;
-    min-width: 120px; 
-    border-radius: 8px;
+    max-width: 300px;
+    min-width: 120px;
+    border-radius: 50%;
 }
 
-.col-centered{
+.col-centered {
     float: none;
     margin: 0 auto;
 }
 
 .icons img {
-    width: 40px;
-    margin: 0px 2px 25px 2px;
+    width: 25px;
+    margin: 5px !important;
 }
 
 
-/* Method*/
-#method{
-    padding: 5em 0 3em 0;
-    min-height: 100vh;
+/* About*/
+
+#about {
+    padding: 100px 0 3em 0;
     height: 100%;
+    background-color: #000000;
 }
 
-#method img {
+#about p {
+    color: #ffffff;
+}
+
+#about img {
     border: none;
     margin: 0 auto;
 }
 
-/* Portfolio*/
-#portfolio {
-    background-color: #cecececd;
-    text-align: center;
-    color: black; 
-    margin: 0 -15px;
-    padding: 5em 0 3em 0;
-    min-height: 100vh;
-    height: 100%;
-}
-
-.img {
-    width: 200px;
-    margin: 0 auto;
-    border-radius: 8px;
-}
-
-.card {
-    padding-top: .8em;
-    margin: 1em auto;
-    width: 90%;
-    min-width: 270px;
-    text-align: center;
-    background-color:#eeeeee; 
-    border-radius: 8px;
-}
-
-.card-text{
-    font-size: .9rem;
-}
-
-.card-title{
+#about strong {
     color: #0c8e9c;
 }
 
-.column {
-    display: none; 
-    margin: 0 auto; 
-    float: none; 
-    padding: 15px;
+
+/* Portfolio*/
+
+#portfolio {
+    background-color: #ffffffce;
+    text-align: center;
+    color: black;
+    margin: 0 -15px;
+    padding: 100px 0 3em 0;
+    height: 100%;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+img.img-portfolio {
+    width: 300px;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    border-radius: 15px;
 }
 
-.show {
-    display: block;
+
+/* Icons */
+
+i {
+    color: #0c8e9c;
+    margin: 5px;
 }
 
-/* Footer */
-footer {
-    background-color:#707070cd;
-    color:#eeeeee;
-    text-align: center; 
-    padding: 1em;
-    
+i:hover {
+    color: #0c8e9c98;
+}
+
+a.btn.btn-about {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    margin-top: 0;
+    color: #000000;
+    font-weight: 900;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 19px;
+}
+
+i.icon-about {
+    font-size: 35px;
 }
