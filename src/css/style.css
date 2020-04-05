@@ -31,10 +31,21 @@ body {
     overflow: hidden;
 }
 
+a {
+    text-decoration: none;
+    color: #0c8e9c;
+    font-weight: 800;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0c8e9c;
+}
+
 h1 {
     color: #0c8e9c;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h2 {
@@ -42,8 +53,7 @@ h2 {
 }
 
 h5 {
-    color: #0c8e9c;
-    font-weight: 700;
+    color: #6a6a6a;
 }
 
 .btn {
@@ -184,7 +194,7 @@ a.btn.btn-about {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     margin-top: 0;
-    color: #000000;
+    color: #2c2b2b;
     font-weight: 900;
     margin-right: 5px;
     margin-left: 5px;
