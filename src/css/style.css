@@ -145,7 +145,8 @@ h5 {
     background-color: #1a1a1a;
 }
 
-.about-me h1 {
+.about-me h1,
+.about-me i {
     color: #ffffff;   
 }
 
@@ -169,8 +170,7 @@ h5 {
     font-size: 60px;
 }
 
-.about-me .btn,
-.about-me i {
+.about-me .btn {
     background-color: #ffffff;
 }
 
