@@ -1,5 +1,7 @@
+import { assetUrl } from "./assetUrl";
+
 export interface Photo {
-  /** Path inside `public/`, for example "/soraya.jpg". */
+  /** URL of the image. Build it with `assetUrl("file.webp")` for files in `public/`. */
   src: string;
   /** Real size of the file in pixels (the browser reserves the space with it). */
   width: number;
@@ -28,7 +30,7 @@ export const site: SiteConfig = {
   npm: "https://www.npmjs.com/~sorayasm",
   storybook: "https://sorayasm.github.io/vietri-ds/",
   // The file lives in `public/`. To hide the photo, set this to `null`.
-  photo: { src: "/soraya.webp", width: 800, height: 1000 },
+  photo: { src: assetUrl("soraya.webp"), width: 800, height: 1000 },
 };
 
 export type ProjectId = "vietri" | "streaming" | "observatory";

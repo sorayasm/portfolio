@@ -58,4 +58,19 @@ Recommended: a vertical photo (4:5 ratio, for example 800 × 1000 px) saved as J
 
 ## Deploying
 
-`npm run build` creates `dist/`. Any static host works (Netlify, Vercel, GitHub Pages, Cloudflare Pages). For the domain `sorayasacaan.com`, point the host's custom domain setting to it.
+The site is deployed to GitHub Pages by `.github/workflows/deploy.yml` on every push to `main`. The workflow runs the type check and the tests first, so a broken version is never published.
+
+**One-time setup**
+
+1. In the repository: *Settings → Pages → Build and deployment → Source: GitHub Actions*.
+2. Push to `main` (or run the workflow by hand from the *Actions* tab). The address appears in the workflow run and in *Settings → Pages*; by default it is `https://<user>.github.io/<repository>/`.
+
+**Using the domain `sorayasacaan.com`**
+
+1. In *Settings → Pages → Custom domain*, enter the domain and save. Tick *Enforce HTTPS* when it becomes available.
+2. At the domain registrar, point the domain to GitHub Pages (see GitHub's documentation, "Managing a custom domain for your GitHub Pages site"): `A` records for the apex domain and a `CNAME` record for `www`.
+3. Create the repository variable `PAGES_BASE` with the value `/` (*Settings → Secrets and variables → Actions → Variables*), and run the workflow again. Without a sub-path, the site is served from the root of the domain.
+
+The files in `public/` must be referenced with `assetUrl("file")` from `src/data/assetUrl.ts`, so they work both at a sub-path and at the root.
+
+Any other static host (Netlify, Vercel, Cloudflare Pages) also works with `npm run build` and the `dist/` folder.
