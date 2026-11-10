@@ -15,6 +15,7 @@ export default defineConfig(({ mode }) => {
       environment: "jsdom",
       globals: true,
       setupFiles: ["./src/test/setup.ts"],
+      server: { deps: { inline: ["@sorayasm/vietri-ds"] } },
     },
   };
 });
