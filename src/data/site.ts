@@ -37,6 +37,12 @@ export type ProjectId = "vietri" | "streaming" | "observatory";
 
 export interface ProjectLinks {
   status: "live" | "inProgress";
+  /**
+   * Screenshot shown on the project card (16:9, for example 1280 × 720 px).
+   * Without it the card shows a plain placeholder. Build the path with
+   * `assetUrl("projects/file.webp")` for files in `public/projects/`.
+   */
+  image?: Photo;
   demo?: string;
   source?: string;
 }
@@ -45,13 +51,19 @@ export interface ProjectLinks {
 export const projectLinks: Record<ProjectId, ProjectLinks> = {
   vietri: {
     status: "live",
+    image: { src: assetUrl("projects/vietri.webp"), width: 1280, height: 720 },
     demo: site.storybook,
     source: "https://github.com/sorayasm/vietri-ds",
   },
   // TODO: add the demo link when the streaming app is deployed.
-  streaming: { status: "inProgress" },
+  // The image shows the current website until the new streaming app exists.
+  streaming: {
+    status: "inProgress",
+    image: { src: assetUrl("projects/streaming.webp"), width: 1280, height: 720 },
+  },
   observatory: {
     status: "live",
+    image: { src: assetUrl("projects/observatory.webp"), width: 1280, height: 720 },
     demo: "https://observatorio.mujeresdelblues.com",
   },
 };

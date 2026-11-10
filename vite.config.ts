@@ -15,6 +15,9 @@ export default defineConfig(({ mode }) => {
       environment: "jsdom",
       globals: true,
       setupFiles: ["./src/test/setup.ts"],
+      // MUI 6 has no "exports" map, so Node cannot import its folders
+      // (@mui/material/Box) from an ES module package. Inlining the design
+      // system lets Vite resolve them, as it does for the app's own code.
       server: { deps: { inline: ["@sorayasm/vietri-ds"] } },
     },
   };

@@ -2,6 +2,8 @@ import { styled } from "@mui/material/styles";
 import { site } from "../data/site";
 import { useLanguage } from "../i18n";
 
+// A styled <img>, not Box: Box turns `width` and `height` into CSS, but here
+// they must stay HTML attributes so the browser reserves the space.
 const Image = styled("img")(({ theme }) => ({
   display: "block",
   width: "100%",
@@ -13,6 +15,13 @@ const Image = styled("img")(({ theme }) => ({
   border: `1px solid ${theme.palette.divider}`,
 }));
 
+/**
+ * Portrait for the "About" section. It renders nothing when no photo is set
+ * in `site.photo`, so the section looks right with or without it.
+ *
+ * `width` and `height` let the browser reserve the space before the image
+ * loads, which avoids the page jumping.
+ */
 export function Portrait() {
   const { t } = useLanguage();
   const photo = site.photo;

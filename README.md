@@ -50,6 +50,10 @@ The portrait in the "About" section is `public/soraya.webp` (800 × 1000 px). To
 
 Recommended: a vertical photo (4:5 ratio, for example 800 × 1000 px) saved as JPEG or WebP under about 150 KB. It appears in the "About" section and is hidden when `photo` is `null`.
 
+## Testing
+
+`npm test` needs `server.deps.inline: ["@sorayasm/vietri-ds"]` in `vite.config.ts` (already set). MUI 6 has no `exports` map, so Node cannot import its folders from an ES module package; inlining the design system lets Vite resolve them. Builds and the dev server are not affected.
+
 ## Language and accessibility
 
 - The page language (`<html lang>`) and the tab title follow the selected language, which is saved in the browser and defaults to the browser language.

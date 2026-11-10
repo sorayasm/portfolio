@@ -6,6 +6,8 @@ export interface ProjectContent {
   id: ProjectId;
   title: string;
   description: string;
+  /** Alternative text of the project image. */
+  imageAlt: string;
   tags: string[];
 }
 
@@ -46,6 +48,7 @@ export interface Content {
   about: {
     eyebrow: string;
     title: string;
+    /** Alternative text of the portrait. */
     photoAlt: string;
     paragraphs: string[];
     figures: { value: string; label: string }[];
@@ -100,7 +103,7 @@ export interface Content {
 
 export const content: Record<Language, Content> = {
   en: {
-    meta: { title: "Soraya Sacaan — Web UI developer" },
+    meta: { title: "Soraya Sacaan — Web developer" },
     skip: "Skip to content",
     nav: {
       ariaLabel: "Main",
@@ -116,7 +119,7 @@ export const content: Record<Language, Content> = {
       },
     },
     hero: {
-      eyebrow: "Web UI developer",
+      eyebrow: "Web developer",
       title: "Building digital experiences through code, design and data.",
       description:
         "Front-end developer and journalist with over a decade in digital products. I build accessible interfaces, design systems and data visualizations with React and TypeScript.",
@@ -138,13 +141,17 @@ export const content: Record<Language, Content> = {
           title: "Vietri Design System",
           description:
             "A themeable, accessible React and MUI design system: 30 components, three themes and automated WCAG 2.2 checks. Published on npm.",
+          imageAlt:
+            "Screenshot of the Vietri Design System documentation in Storybook: the introduction page, with the list of components on the left.",
           tags: ["React", "TypeScript", "MUI", "Storybook"],
         },
         {
           id: "streaming",
-          title: "El Blues es Femenino — Podcast and Playlists",
+          title: "El Blues es Femenino — streaming",
           description:
-            "A platform for El Blues es Femenino, the interview podcast I created and produce: episodes by season and playlists of women in the blues across music services.",
+            "A streaming platform for El Blues es Femenino, the interview podcast I created and produce: episodes by season and playlists of women in the blues across music services.",
+          imageAlt:
+            "The current El Blues es Femenino website: a purple banner with the podcast title and logo.",
           tags: ["React", "TypeScript", "Vietri DS"],
         },
         {
@@ -152,6 +159,8 @@ export const content: Record<Language, Content> = {
           title: "Observatorio Mujeres del Blues",
           description:
             "The digital observatory of Mujeres del Blues, the network I founded: 176 profiles, their relationships, a timeline and an interactive network.",
+          imageAlt:
+            "Screenshot of the Observatorio MDB showing the relationship graph of women in the blues, with filters for country, role and decade above it.",
           tags: ["React", "Data visualization", "Vietri DS"],
         },
       ],
@@ -214,7 +223,7 @@ export const content: Record<Language, Content> = {
         },
         {
           id: "exp-freelance",
-          role: "Web UI developer · Freelance (Italy and Chile)",
+          role: "Web UI developer · Freelance (Italy)",
           period: "February 2026 – Present",
           points: ["Web development for entrepreneurs and independent initiatives."],
         },
@@ -330,7 +339,7 @@ export const content: Record<Language, Content> = {
       },
     },
     footer: {
-      description: "Web UI developer and journalist. Built with Vietri DS.",
+      description: "Web developer and journalist. Built with Vietri DS.",
       linksLabel: "Footer links",
       external: "(opens in a new tab)",
       legal: "© {year} Soraya Sacaan. All rights reserved.",
@@ -344,7 +353,7 @@ export const content: Record<Language, Content> = {
   },
 
   es: {
-    meta: { title: "Soraya Sacaan — Desarrolladora web UI" },
+    meta: { title: "Soraya Sacaan — Desarrolladora web" },
     skip: "Saltar al contenido",
     nav: {
       ariaLabel: "Principal",
@@ -360,7 +369,7 @@ export const content: Record<Language, Content> = {
       },
     },
     hero: {
-      eyebrow: "Desarrolladora web UI",
+      eyebrow: "Desarrolladora web",
       title: "Construyo experiencias digitales con código, diseño y datos.",
       description:
         "Desarrolladora front-end y periodista con más de una década en productos digitales. Construyo interfaces accesibles, sistemas de diseño y visualizaciones de datos con React y TypeScript.",
@@ -382,13 +391,17 @@ export const content: Record<Language, Content> = {
           title: "Vietri Design System",
           description:
             "Un sistema de diseño accesible y con temas, hecho con React y MUI: 30 componentes, tres temas y revisiones automáticas de WCAG 2.2. Publicado en npm.",
+          imageAlt:
+            "Captura de la documentación del sistema de diseño Vietri en Storybook: la página de introducción, con la lista de componentes a la izquierda.",
           tags: ["React", "TypeScript", "MUI", "Storybook"],
         },
         {
           id: "streaming",
-          title: "El Blues es Femenino - Podcast y Playlists",
+          title: "El Blues es Femenino — streaming",
           description:
-            "Una plataforma para El Blues es Femenino, el podcast de entrevistas que creé y produzco: capítulos por temporada y playlists de mujeres del blues en distintos servicios de música.",
+            "Una plataforma de streaming para El Blues es Femenino, el podcast de entrevistas que creé y produzco: capítulos por temporada y playlists de mujeres del blues en distintos servicios de música.",
+          imageAlt:
+            "El sitio actual de El Blues es Femenino: un banner morado con el título y el logo del podcast.",
           tags: ["React", "TypeScript", "Vietri DS"],
         },
         {
@@ -396,6 +409,8 @@ export const content: Record<Language, Content> = {
           title: "Observatorio Mujeres del Blues",
           description:
             "El observatorio digital de Mujeres del Blues, la red que fundé: 176 perfiles, sus relaciones, una línea de tiempo y una red interactiva.",
+          imageAlt:
+            "Captura del Observatorio MDB con el grafo de relaciones de mujeres del blues, y filtros por país, rol y década encima.",
           tags: ["React", "Visualización de datos", "Vietri DS"],
         },
       ],
@@ -461,7 +476,7 @@ export const content: Record<Language, Content> = {
         },
         {
           id: "exp-freelance",
-          role: "Web UI developer · Freelance (Italia y Chile)",
+          role: "Web UI developer · Freelance (Italia)",
           period: "Febrero 2026 – Actualidad",
           points: ["Desarrollo web para proyectos de emprendedores e iniciativas independientes."],
         },
@@ -579,7 +594,7 @@ export const content: Record<Language, Content> = {
       },
     },
     footer: {
-      description: "Desarrolladora web UI y periodista. Construido con Vietri DS.",
+      description: "Desarrolladora web y periodista. Construido con Vietri DS.",
       linksLabel: "Enlaces del pie de página",
       external: "(se abre en una pestaña nueva)",
       legal: "© {year} Soraya Sacaan. Todos los derechos reservados.",

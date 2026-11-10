@@ -3,7 +3,7 @@ import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import axe from "axe-core";
 import App from "./App";
-import { site } from "./data/site";
+import { projectLinks, site } from "./data/site";
 import { LANGUAGE_STORAGE_KEY, content } from "./i18n";
 
 async function a11yViolations() {
@@ -25,6 +25,10 @@ async function a11yViolations() {
 }
 
 const configuredPhoto = site.photo;
+const configuredImages = {
+  vietri: projectLinks.vietri.image,
+  streaming: projectLinks.streaming.image,
+};
 
 beforeEach(() => {
   localStorage.clear();
@@ -33,6 +37,8 @@ beforeEach(() => {
 afterEach(() => {
   // Tests change the photo; put the real one back.
   site.photo = configuredPhoto;
+  projectLinks.vietri.image = configuredImages.vietri;
+  projectLinks.streaming.image = configuredImages.streaming;
 });
 
 describe("Portfolio", () => {
@@ -134,7 +140,9 @@ describe("Portfolio", () => {
   it("shows no image when the photo is turned off", () => {
     site.photo = null;
     render(<App />);
-    expect(screen.queryByRole("img")).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole("img", { name: content.en.about.photoAlt })
+    ).not.toBeInTheDocument();
   });
 
   it("shows the portrait with its alt text, in the chosen language", async () => {
@@ -148,6 +156,62 @@ describe("Portfolio", () => {
 
     await user.click(screen.getByRole("button", { name: "ES" }));
     expect(screen.getByRole("img", { name: content.es.about.photoAlt })).toBeInTheDocument();
+  });
+
+  it("shows a project's image with its alt text and reserved size", () => {
+    projectLinks.vietri.image = { src: "/projects/vietri.webp", width: 1280, height: 720 };
+    render(<App />);
+
+    const image = screen.getByRole("img", { name: content.en.work.projects[0].imageAlt });
+    expect(image).toHaveAttribute("src", "/projects/vietri.webp");
+    expect(image).toHaveAttribute("width", "1280");
+    expect(image).toHaveAttribute("height", "720");
+  });
+
+  it("shows the project image alt text in the chosen language", async () => {
+    projectLinks.vietri.image = { src: "/projects/vietri.webp", width: 1280, height: 720 };
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole("button", { name: "ES" }));
+    expect(
+      screen.getByRole("img", { name: content.es.work.projects[0].imageAlt })
+    ).toBeInTheDocument();
+  });
+
+  it("a project without an image shows a placeholder, not a broken image", () => {
+    projectLinks.streaming.image = undefined;
+    render(<App />);
+    const heading = screen.getByRole("heading", {
+      level: 3,
+      name: content.en.work.projects[1].title,
+    });
+    const card = heading.closest(".MuiCard-root") as HTMLElement;
+    expect(within(card).queryByRole("img")).not.toBeInTheDocument();
+  });
+
+  it("projects with a demo have a mouse-only link over the card, hidden from assistive technology", () => {
+    const { container } = render(<App />);
+    const overlays = container.querySelectorAll('a[aria-hidden="true"][tabindex="-1"]');
+    // Vietri DS and the Observatory have a demo; the streaming app does not yet.
+    expect(overlays).toHaveLength(2);
+    expect(overlays[0]).toHaveAttribute("href", projectLinks.vietri.demo);
+    expect(overlays[0]).toHaveAttribute("rel", "noopener noreferrer");
+  });
+
+  it("the visible buttons are the way to the demo for keyboard and screen readers", () => {
+    render(<App />);
+    expect(screen.getAllByRole("link", { name: /^View live/ })).toHaveLength(2);
+  });
+
+  it("a project without a demo has no link over its card", () => {
+    const { container } = render(<App />);
+    const heading = screen.getByRole("heading", {
+      level: 3,
+      name: content.en.work.projects[1].title,
+    });
+    const card = heading.closest(".MuiCard-root") as HTMLElement;
+    expect(card.querySelector("a[aria-hidden]")).toBeNull();
+    expect(container).toBeTruthy();
   });
 
   describe("contact form", () => {
