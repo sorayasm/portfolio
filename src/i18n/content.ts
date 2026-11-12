@@ -103,7 +103,7 @@ export interface Content {
 
 export const content: Record<Language, Content> = {
   en: {
-    meta: { title: "Soraya Sacaan - Web developer" },
+    meta: { title: "Soraya Sacaan - Web UI developer" },
     skip: "Skip to content",
     nav: {
       ariaLabel: "Main",
@@ -119,7 +119,7 @@ export const content: Record<Language, Content> = {
       },
     },
     hero: {
-      eyebrow: "Web developer",
+      eyebrow: "Web UI developer",
       title: "Building digital experiences through code, design and data.",
       description:
         "Front-end developer and journalist with over a decade in digital products. I build accessible interfaces, design systems and data visualizations with React and TypeScript.",
@@ -147,9 +147,9 @@ export const content: Record<Language, Content> = {
         },
         {
           id: "streaming",
-          title: "El Blues es Femenino - streaming",
+          title: "El Blues es Femenino",
           description:
-            "A streaming site for El Blues es Femenino, the interview podcast I created and produce: 29 episodes in three seasons, each with its flyer, and the playlists on four music services.",
+            "A streaming site for El Blues es Femenino, an interview podcast with 29 episodes in three seasons, each with its flyer, and the playlists on four music services.",
           imageAlt:
             "Home page of the El Blues es Femenino site: the podcast name over a photo of the host in the studio, with the buttons to watch the latest episode and to listen on the music platforms.",
           tags: ["React", "TypeScript", "Vietri DS"],
@@ -158,7 +158,7 @@ export const content: Record<Language, Content> = {
           id: "observatory",
           title: "Observatorio Mujeres del Blues",
           description:
-            "The digital observatory of Mujeres del Blues, the network I founded: 176 profiles, their relationships, a timeline and an interactive network.",
+            "The global digital observatory of Mujeres del Blues: 176 profiles, their relationships, a timeline and an interactive network.",
           imageAlt:
             "Screenshot of the Observatorio MDB showing the relationship graph of women in the blues, with filters for country, role and decade above it.",
           tags: ["React", "Data visualization", "Vietri DS"],
@@ -170,9 +170,9 @@ export const content: Record<Language, Content> = {
       title: "Code, design and data",
       photoAlt: "Portrait of Soraya Sacaan",
       paragraphs: [
-        "I'm Soraya Sacaan, a front-end developer and journalist with over a decade of experience in digital products. For almost five years I built web applications, design systems and reusable interface components with React, React Native and TypeScript at Globant, working with international teams.",
+        "I'm Soraya Sacaan, a front-end developer and journalist with over a decade of experience in digital products. For more than seven years I built web applications, design systems and reusable interface components with React, React Native and TypeScript, working with interdisciplinary international teams.",
         "Before that I ran my own digital agency and worked on communication and social innovation projects. That background shapes how I work: I care about the people who will use an interface, and about telling clear stories with data.",
-        "Outside client work I founded Mujeres del Blues in 2020, a platform and network that makes women in the blues visible, with a podcast and a festival in Chile. Its observatory and its streaming platform are the projects above.",
+        "Outside client work I founded Mujeres del Blues in 2019, a platform and network that makes women in the blues visible, with a podcast and a festival in Chile. Its observatory and its streaming platform are the projects above.",
       ],
       figures: [
         { value: "10+", label: "Years building digital products" },
@@ -214,7 +214,7 @@ export const content: Record<Language, Content> = {
         {
           id: "exp-mujeres-del-blues",
           role: "Founder and project director · Mujeres del Blues",
-          period: "2020 – Present",
+          period: "2019 – Present",
           points: [
             "Created a digital platform that increases the visibility of women in the blues, and built a network of artists and collaborators from different countries.",
             "Created and produce the interview podcast El Blues es Femenino.",
@@ -369,10 +369,10 @@ export const content: Record<Language, Content> = {
       },
     },
     hero: {
-      eyebrow: "Desarrolladora web",
-      title: "Construyo experiencias digitales con código, diseño y datos.",
+      eyebrow: "Desarrolladora web UI",
+      title: "Diseño y desarrollo experiencias digitales con código, diseño y datos.",
       description:
-        "Desarrolladora front-end y periodista con más de una década en productos digitales. Construyo interfaces accesibles, sistemas de diseño y visualizaciones de datos con React y TypeScript.",
+        "Desarrolladora web UI y periodista con más de una década en productos digitales. Desarrollo interfaces accesibles, sistemas de diseño y visualizaciones de datos con React y TypeScript.",
       primary: "Ver proyectos",
       secondary: "Contáctame",
     },
@@ -399,7 +399,7 @@ export const content: Record<Language, Content> = {
           id: "streaming",
           title: "El Blues es Femenino - streaming",
           description:
-            "Un sitio de streaming para El Blues es Femenino, el podcast de entrevistas que creé y produzco: 29 capítulos en tres temporadas, cada uno con su flyer, y las playlists en cuatro servicios de música.",
+            "Un sitio para el proyecto El Blues es Femenino, podcast de entrevistas con 29 capítulos en tres temporadas, cada uno con su flyer, y las playlists en cuatro servicios de música.",
           imageAlt:
             "Página de inicio del sitio de El Blues es Femenino: el nombre del podcast sobre una foto de la presentadora en el estudio, con los botones para ver lo más reciente y escuchar en las plataformas de música.",
           tags: ["React", "TypeScript", "Vietri DS"],
@@ -408,7 +408,7 @@ export const content: Record<Language, Content> = {
           id: "observatory",
           title: "Observatorio Mujeres del Blues",
           description:
-            "El observatorio digital de Mujeres del Blues, la red que fundé: 176 perfiles, sus relaciones, una línea de tiempo y una red interactiva.",
+            "El observatorio digital de Mujeres del Blues a nivel mundial: 176 perfiles, sus relaciones, una línea de tiempo y una red interactiva.",
           imageAlt:
             "Captura del Observatorio MDB con el grafo de relaciones de mujeres del blues, y filtros por país, rol y década encima.",
           tags: ["React", "Visualización de datos", "Vietri DS"],
@@ -420,9 +420,9 @@ export const content: Record<Language, Content> = {
       title: "Código, diseño y datos",
       photoAlt: "Retrato de Soraya Sacaan",
       paragraphs: [
-        "Soy Soraya Sacaan, desarrolladora front-end y periodista con más de una década de experiencia en productos digitales. Durante casi cinco años construí aplicaciones web, sistemas de diseño y componentes de interfaz reutilizables con React, React Native y TypeScript en Globant, trabajando con equipos internacionales.",
+        "Soy Soraya Sacaan, desarrolladora web UI y periodista con más de una década de experiencia en productos digitales. Durante más de siete años he construido aplicaciones web, sistemas de diseño y componentes de interfaz reutilizables con React, React Native y TypeScript, trabajando con equipos multidisciplinarios internacionales.",
         "Antes dirigí mi propia agencia digital y trabajé en proyectos de comunicación e innovación social. Esa trayectoria marca mi forma de trabajar: me importan las personas que usarán una interfaz y contar historias claras con datos.",
-        "Fuera del trabajo con clientes fundé Mujeres del Blues en 2020, una plataforma y red que da visibilidad a las mujeres en el blues, con un podcast y un festival en Chile. Su observatorio y su plataforma de streaming son los proyectos de arriba.",
+        "Fuera del trabajo de proyectos de tecnología fundé Mujeres del Blues en 2019, una plataforma y red que da visibilidad a las mujeres en el blues, con un podcast y un festival en Chile. Su observatorio y su plataforma de streaming son los proyectos de arriba.",
       ],
       figures: [
         { value: "10+", label: "Años construyendo productos digitales" },
@@ -467,7 +467,7 @@ export const content: Record<Language, Content> = {
         {
           id: "exp-mujeres-del-blues",
           role: "Fundadora y directora de proyecto · Mujeres del Blues",
-          period: "2020 – Actualidad",
+          period: "2019 – Actualidad",
           points: [
             "Creé una plataforma digital que aumenta la visibilidad de las mujeres en el blues y construí una red de artistas y colaboradoras de distintos países.",
             "Creé y produzco el podcast de entrevistas El Blues es Femenino.",
@@ -575,7 +575,7 @@ export const content: Record<Language, Content> = {
       eyebrow: "Contacto",
       title: "Conversemos",
       description:
-        "¿Tienes un proyecto en mente, o quieres conversar sobre sistemas de diseño o accesibilidad? Escríbeme.",
+        "¿Tienes un proyecto en mente? ¿Quieres conversar sobre sistemas de diseño o accesibilidad? Escríbeme.",
       elsewhere: "También me encuentras en",
       form: {
         label: "Formulario de contacto",
