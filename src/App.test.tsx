@@ -29,6 +29,7 @@ const configuredImages = {
   vietri: projectLinks.vietri.image,
   streaming: projectLinks.streaming.image,
 };
+const configuredStreamingDemo = projectLinks.streaming.demo;
 
 beforeEach(() => {
   localStorage.clear();
@@ -37,6 +38,7 @@ beforeEach(() => {
 afterEach(() => {
   // Tests change the photo; put the real one back.
   site.photo = configuredPhoto;
+  projectLinks.streaming.demo = configuredStreamingDemo;
   projectLinks.vietri.image = configuredImages.vietri;
   projectLinks.streaming.image = configuredImages.streaming;
 });
@@ -192,18 +194,19 @@ describe("Portfolio", () => {
   it("projects with a demo have a mouse-only link over the card, hidden from assistive technology", () => {
     const { container } = render(<App />);
     const overlays = container.querySelectorAll('a[aria-hidden="true"][tabindex="-1"]');
-    // Vietri DS and the Observatory have a demo; the streaming app does not yet.
-    expect(overlays).toHaveLength(2);
+    // Vietri DS, the streaming site and the Observatory all have a demo.
+    expect(overlays).toHaveLength(3);
     expect(overlays[0]).toHaveAttribute("href", projectLinks.vietri.demo);
     expect(overlays[0]).toHaveAttribute("rel", "noopener noreferrer");
   });
 
   it("the visible buttons are the way to the demo for keyboard and screen readers", () => {
     render(<App />);
-    expect(screen.getAllByRole("link", { name: /^View live/ })).toHaveLength(2);
+    expect(screen.getAllByRole("link", { name: /^View live/ })).toHaveLength(3);
   });
 
   it("a project without a demo has no link over its card", () => {
+    projectLinks.streaming.demo = undefined; // restored after each test
     const { container } = render(<App />);
     const heading = screen.getByRole("heading", {
       level: 3,
@@ -212,6 +215,14 @@ describe("Portfolio", () => {
     const card = heading.closest(".MuiCard-root") as HTMLElement;
     expect(card.querySelector("a[aria-hidden]")).toBeNull();
     expect(container).toBeTruthy();
+  });
+
+  it("the streaming site links to the live site and to its code", () => {
+    render(<App />);
+    const live = screen.getByRole("link", { name: /^View live.*El Blues es Femenino/ });
+    expect(live).toHaveAttribute("href", "https://elbluesesfemenino.cl");
+    const source = screen.getByRole("link", { name: /^Source code.*El Blues es Femenino/ });
+    expect(source).toHaveAttribute("href", "https://github.com/sorayasm/streaming");
   });
 
   describe("contact form", () => {

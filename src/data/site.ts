@@ -55,11 +55,12 @@ export const projectLinks: Record<ProjectId, ProjectLinks> = {
     demo: site.storybook,
     source: "https://github.com/sorayasm/vietri-ds",
   },
-  // TODO: add the demo link when the streaming app is deployed.
-  // The image shows the current website until the new streaming app exists.
   streaming: {
-    status: "inProgress",
+    status: "live",
+    // Screenshot of the home page of the site.
     image: { src: assetUrl("projects/streaming.webp"), width: 1280, height: 720 },
+    demo: "https://elbluesesfemenino.cl",
+    source: "https://github.com/sorayasm/streaming",
   },
   observatory: {
     status: "live",

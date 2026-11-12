@@ -103,7 +103,7 @@ export interface Content {
 
 export const content: Record<Language, Content> = {
   en: {
-    meta: { title: "Soraya Sacaan — Web developer" },
+    meta: { title: "Soraya Sacaan - Web developer" },
     skip: "Skip to content",
     nav: {
       ariaLabel: "Main",
@@ -147,11 +147,11 @@ export const content: Record<Language, Content> = {
         },
         {
           id: "streaming",
-          title: "El Blues es Femenino — streaming",
+          title: "El Blues es Femenino - streaming",
           description:
-            "A streaming platform for El Blues es Femenino, the interview podcast I created and produce: episodes by season and playlists of women in the blues across music services.",
+            "A streaming site for El Blues es Femenino, the interview podcast I created and produce: 29 episodes in three seasons, each with its flyer, and the playlists on four music services.",
           imageAlt:
-            "The current El Blues es Femenino website: a purple banner with the podcast title and logo.",
+            "Home page of the El Blues es Femenino site: the podcast name over a photo of the host in the studio, with the buttons to watch the latest episode and to listen on the music platforms.",
           tags: ["React", "TypeScript", "Vietri DS"],
         },
         {
@@ -353,7 +353,7 @@ export const content: Record<Language, Content> = {
   },
 
   es: {
-    meta: { title: "Soraya Sacaan — Desarrolladora web" },
+    meta: { title: "Soraya Sacaan - Desarrolladora web" },
     skip: "Saltar al contenido",
     nav: {
       ariaLabel: "Principal",
@@ -397,11 +397,11 @@ export const content: Record<Language, Content> = {
         },
         {
           id: "streaming",
-          title: "El Blues es Femenino — streaming",
+          title: "El Blues es Femenino - streaming",
           description:
-            "Una plataforma de streaming para El Blues es Femenino, el podcast de entrevistas que creé y produzco: capítulos por temporada y playlists de mujeres del blues en distintos servicios de música.",
+            "Un sitio de streaming para El Blues es Femenino, el podcast de entrevistas que creé y produzco: 29 capítulos en tres temporadas, cada uno con su flyer, y las playlists en cuatro servicios de música.",
           imageAlt:
-            "El sitio actual de El Blues es Femenino: un banner morado con el título y el logo del podcast.",
+            "Página de inicio del sitio de El Blues es Femenino: el nombre del podcast sobre una foto de la presentadora en el estudio, con los botones para ver lo más reciente y escuchar en las plataformas de música.",
           tags: ["React", "TypeScript", "Vietri DS"],
         },
         {

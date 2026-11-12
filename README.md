@@ -1,4 +1,4 @@
-# Soraya Sacaan — portfolio
+# Soraya Sacaan - portfolio
 
 Bilingual (English / Spanish) portfolio built with React, TypeScript and Vite. It uses the published design system [`@sorayasm/vietri-ds`](https://www.npmjs.com/package/@sorayasm/vietri-ds) with its `editorial` theme (black, white and gold), so it is also a real-world test of the package.
 

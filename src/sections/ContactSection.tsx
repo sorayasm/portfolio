@@ -142,7 +142,7 @@ export function ContactSection() {
               inputRef={refs.message}
             />
             <Box>
-              <Button type="submit" size="large">
+              <Button type="submit" size="large" variant="contained">
                 {form.send}
               </Button>
             </Box>

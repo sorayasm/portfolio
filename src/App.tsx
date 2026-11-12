@@ -52,7 +52,7 @@ function Page() {
           description={t.hero.description}
           actions={
             <>
-              <Button size="large" href="#work">
+              <Button size="large" variant="contained" href="#work">
                 {t.hero.primary}
               </Button>
               <Button size="large" variant="outlined" href="#contact">
