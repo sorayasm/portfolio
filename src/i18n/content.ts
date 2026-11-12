@@ -34,6 +34,7 @@ export interface Content {
     description: string;
     primary: string;
     secondary: string;
+    image: string;
   };
   work: {
     eyebrow: string;
@@ -125,6 +126,7 @@ export const content: Record<Language, Content> = {
         "Front-end developer and journalist with over a decade in digital products. I build accessible interfaces, design systems and data visualizations with React and TypeScript.",
       primary: "See selected work",
       secondary: "Get in touch",
+      image: "/desktop.jpg",
     },
     work: {
       eyebrow: "Selected work",
@@ -375,6 +377,7 @@ export const content: Record<Language, Content> = {
         "Desarrolladora web UI y periodista con más de una década en productos digitales. Desarrollo interfaces accesibles, sistemas de diseño y visualizaciones de datos con React y TypeScript.",
       primary: "Ver proyectos",
       secondary: "Contáctame",
+      image: "/desktop.jpg",
     },
     work: {
       eyebrow: "Trabajo destacado",

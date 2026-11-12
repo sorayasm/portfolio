@@ -50,6 +50,7 @@ function Page() {
           eyebrow={t.hero.eyebrow}
           title={t.hero.title}
           description={t.hero.description}
+          image={t.hero.image}
           actions={
             <>
               <Button size="large" variant="contained" href="#work">
