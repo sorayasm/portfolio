@@ -158,11 +158,11 @@ export const content: Record<Language, Content> = {
         },
         {
           id: "observatory",
-          title: "Observatorio Mujeres del Blues",
+          title: "Observatorio MDB",
           description:
-            "The global digital observatory of Mujeres del Blues: 176 profiles, their relationships, a timeline and an interactive network.",
+            "The data observatory of Mujeres del Blues, the network I founded, with Vox Mater as its data engine: 176 profiles, a map that changes decade by decade, a network you can drag and zoom, and data stories.",
           imageAlt:
-            "Screenshot of the Observatorio MDB showing the relationship graph of women in the blues, with filters for country, role and decade above it.",
+            "Home page of the Observatorio MDB: the title “Observatorio de Mujeres en el Blues” over a purple illustration, with buttons to explore the profiles and to see the map.",
           tags: ["React", "Data visualization", "Vietri DS"],
         },
       ],
@@ -355,7 +355,7 @@ export const content: Record<Language, Content> = {
   },
 
   es: {
-    meta: { title: "Soraya Sacaan - Desarrolladora web" },
+    meta: { title: "Soraya Sacaan - Desarrolladora web IU" },
     skip: "Saltar al contenido",
     nav: {
       ariaLabel: "Principal",
@@ -400,7 +400,7 @@ export const content: Record<Language, Content> = {
         },
         {
           id: "streaming",
-          title: "El Blues es Femenino - streaming",
+          title: "El Blues es Femenino",
           description:
             "Un sitio para el proyecto El Blues es Femenino, podcast de entrevistas con 29 capítulos en tres temporadas, cada uno con su flyer, y las playlists en cuatro servicios de música.",
           imageAlt:
@@ -409,11 +409,11 @@ export const content: Record<Language, Content> = {
         },
         {
           id: "observatory",
-          title: "Observatorio Mujeres del Blues",
+          title: "Observatorio MDB",
           description:
-            "El observatorio digital de Mujeres del Blues a nivel mundial: 176 perfiles, sus relaciones, una línea de tiempo y una red interactiva.",
+            "El observatorio de datos de Mujeres del Blues, la red que fundé, con Vox Mater como motor de datos: 176 perfiles, un mapa que cambia década a década, una red que se puede arrastrar y acercar, y reportajes de datos.",
           imageAlt:
-            "Captura del Observatorio MDB con el grafo de relaciones de mujeres del blues, y filtros por país, rol y década encima.",
+            "Página de inicio del Observatorio MDB: el título «Observatorio de Mujeres en el Blues» sobre una ilustración violeta, con botones para explorar los perfiles y ver el mapa.",
           tags: ["React", "Visualización de datos", "Vietri DS"],
         },
       ],
